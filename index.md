@@ -30,4 +30,4 @@ int main() {
 
 ## Recent Writtings
 
-{% include posts.html max=5 %}
+`{% include posts.html max=5 %}`
