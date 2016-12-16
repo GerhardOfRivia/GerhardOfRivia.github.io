@@ -1,0 +1,11 @@
+me: AsynchchronousGillz
+markdown: kramdown
+
+relative_permalinks: false
+title: AsynchronousGillz
+repository: https://github.com/AsynchronousGillz/AsynchronousGillz.github.io
+timezone: America/Denver
+baseurl: ""
+
+permalink: /blog/:year/:month/:day/:title
+
