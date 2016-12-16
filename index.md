@@ -3,13 +3,9 @@ layout: default
 title: Home
 ---
 
-## Recent Writtings
-
-{% include posts.html max=5 %}
-
 ## Code
 
-```C
+```
 #include <stdio.h>
  void main() {
      int i = 0;
@@ -19,7 +15,7 @@ title: Home
  // what is the answer?
 ```
 
-```C
+```
 #include <stdio.h>
 int main() {
     int temp[3] = {0, 1, 2};
@@ -31,3 +27,7 @@ int main() {
 }
 // what is the answer?
 ```
+
+## Recent Writtings
+
+{% include posts.html max=5 %}
