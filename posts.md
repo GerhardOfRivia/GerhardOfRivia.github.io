@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Meetings
+title: Writtings
 ---
 
 {% include posts.html max=-1 %}

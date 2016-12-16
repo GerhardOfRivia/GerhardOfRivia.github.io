@@ -103,12 +103,18 @@ Use the code word from the twitter messages.
 
 ## Part Three
 
-### Scratchy and Itchy
+### Itchy and Scratchy
+
+`sudo -h`
 
 `sudo -l`
 
-`sudo -u itchy /usr/sbin/tcpdump (port 80) -r /out.pcap`
+`sudo -u itchy /usr/bin/strings -n 16 -r /out.pcap`
 
+Note: n for length for minium of characters
 
+`sudo -u itchy /usr/bin/strings --encoding=l -r /out.pcap`
+
+Note: l = 16-bit littleendian
 
 ## Part Four
