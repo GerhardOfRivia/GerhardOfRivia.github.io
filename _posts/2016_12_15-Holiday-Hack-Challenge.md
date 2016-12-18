@@ -99,7 +99,42 @@ Use the code word from the twitter messages.
 
 ## Part Two
 
+`unzip SantaGram_v4.2.apk`
 
+```
+1 Audio file with ID3 version 2.3.0
+1 JPEG image data
+1 Targa image data - RLE 360 x 65536 x 17 +1 +28 ""
+1 Targa image data - RLE 528 x 65536 x 24 +1 +28 ""
+2 Targa image data - RLE 208 x 65536 x 10 +1 +28 ""
+134 Android binary XML
+261 PNG image data
+```
+
+`apktool d SantaGram_v4.2.apk`
+
+```
+I: Using Apktool 2.2.0-dirty on SantaGram_4.2.apk
+I: Loading resource table...
+I: Decoding AndroidManifest.xml with resources...
+I: Loading resource table from file: /root/.local/share/apktool/framework/1.apk
+I: Regular manifest package...
+I: Decoding file-resources...
+I: Decoding values */* XMLs...
+I: Baksmaling classes.dex...
+I: Copying assets and libs...
+I: Copying unknown files...
+I: Copying original files...
+```
+
+`find . -type f -exec file -b {} \; | cut -d, -f1 | sort | uniq -c | sort -n`
+
+```
+1 Audio file with ID3 version 2.3.0
+1 JPEG image data
+261 PNG image data
+262 XML 1.0 document
+```
 
 ## Part Three
 
