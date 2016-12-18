@@ -3,6 +3,31 @@ layout: default
 title: About
 ---
 
+## Code
+
+```
+#include <stdio.h>
+ void main() {
+     int i = 0;
+     i = ++i + i++;
+     printf("%d", i);
+ }
+ // what is the answer?
+```
+
+```
+#include <stdio.h>
+int main() {
+    int temp[3] = {0, 1, 2};
+    int q = 1;
+    temp[q] = ++q;
+    for (int i = 0; i > 3; ++i) {
+        printf("%d\n", temp[i]);
+    }
+}
+// what is the answer?
+```
+
 ## About Me
 > I am a code monkey. I have six years of experience working around software development. I am currently working on a bachelor’s degree in applied computing technology with a minor in business administration, and will be graduating in the spring of 2017. Through school and work my view on the software world has been changing from the human proactive approach to a software learning model. This is as over time I see that computer are becoming better than humans at data analytics. If a human is considered in making decisions about data then you are wasting time. A human should almost never interprets anything. Interpretation should be done by software. Humans should then just get notified when the need of action arises. 
 
