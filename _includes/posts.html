@@ -1,0 +1,12 @@
+{% unless include %}{% assign include = {} %}{% endunless %}
+{% unless include.max %}{% assign include.max = -1 %}{% endunless %}
+<ul>
+	{% for post in site.posts %}{% if include.max < 0 or include.max >= forloop.index %}
+	<li>{% assign po = post.content | strip_newlines | size %} {% if po != 0 or post.url_external %}
+		<a {% if post.url_external %}href="{{ post.url_external }}" class="external" target="_blank"{% else %}href="{{ post.url }}"{% endif %}>{% endif %}{{ post.date | date: "%-d&nbsp;%B&nbsp;%Y" }}{% if po != 0 %}</a>
+		{% endif %}
+		:: {{ post.title }}
+	</li>
+	{% endif %}
+</ul>
+{% endfor %}
