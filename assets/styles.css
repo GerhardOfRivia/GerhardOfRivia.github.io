@@ -305,6 +305,10 @@ footer a {
 #footer-links a {
     margin-left: 10px
 }
+#github img {
+    width: 5%;
+    height: 5%
+}
 #top-cover-image-wrapper {
     position: absolute;
     top: 0;
@@ -631,12 +635,6 @@ tr:nth-child(even) {
 th {
     background-color: #555;
     color: white;
-}
-.UP {
-    color: green;
-}
-.DOWN {
-    color: red;
 }
 .ipop{
     background-color: #555;
