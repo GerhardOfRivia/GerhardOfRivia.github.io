@@ -209,6 +209,10 @@ header {
     top: 0;
     background: rgba(255, 255, 255, 0.85)
 }
+#nav-bottom.sticky {
+    position: relative;
+    z-index: 25
+}
 button#mobile-menu {
     display: none;
     background: transparent;
