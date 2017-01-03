@@ -44,17 +44,12 @@ h2 {
 }
 main {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     font-size: 1.2em;
-    word-break: break-word
+    word-break: break-word;
+    margin: auto
 }
 header,
 footer {
