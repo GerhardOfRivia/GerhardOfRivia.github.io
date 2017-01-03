@@ -315,12 +315,8 @@ footer a {
     width: 25%;
     height: auto
 }
-blockquote { 
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 40px;
-    margin-right: 40px;
+blockquote {
+    border: 0px
 }
 #top-cover-image-wrapper {
     position: absolute;
