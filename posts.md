@@ -28,4 +28,6 @@ int main() {
 // what is the answer?
 ```
 
+## Blog blog blog
+
 {% include posts.html max=-1 %}
