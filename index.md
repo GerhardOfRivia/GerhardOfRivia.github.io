@@ -3,6 +3,6 @@ layout: default
 title: Home
 ---
 
-## Recent Writtings
+## ... made with strange alien technology
 
-{% include posts.html max=5 %}
+{% include blog.html max=5 %}
