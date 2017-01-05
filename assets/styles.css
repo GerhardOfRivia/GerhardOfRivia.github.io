@@ -645,8 +645,9 @@ th {
     background-color: #555;
     color: white;
 }
-.ipop{
-    background-color: #555;
+.date .time{
+    margin-left: auto;
+    margin-right: auto
 }
 textarea {
     width: 100%;
