@@ -30,4 +30,4 @@ int main() {
 
 ## Blog blog blog
 
-{% include blog.html max=-1 %}
+{% include blog.html %}
