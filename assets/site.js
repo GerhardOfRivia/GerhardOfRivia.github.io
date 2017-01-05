@@ -213,36 +213,6 @@ document.getElementById("searchEngineList").addEventListener("mouseleave", funct
         showHideList("hide");
     }
 });
-/*
- * BOOKMARKS LISTS
- */
-// create the lists
-function populateBookmarkList(){
-    var container = document.getElementById("bookmarks");
-
-    // iterate over list and add items as list to container
-    for(var i=0; i < bookmarkkeys.length; i++){
-        var ulnode = document.createElement("UL");
-        var linode = document.createElement("LI");
-        var textnode = document.createTextNode(bookmarkkeys[i]);
-
-        linode.appendChild(textnode);
-        ulnode.appendChild(linode);
-
-        for(var j=0; j < bookmarks[bookmarkkeys[i]].length; j++){
-            linode = document.createElement("LI");
-            var anode = document.createElement("A");
-            anode.target = "_blank";
-            anode.setAttribute("href", bookmarks[bookmarkkeys[i]][j].url);
-            textnode = document.createTextNode(bookmarks[bookmarkkeys[i]][j].sitename);
-
-            anode.appendChild(textnode);
-            linode.appendChild(anode);
-            ulnode.appendChild(linode);
-        }
-        container.appendChild(ulnode);
-    }
-}
 
 /*
  * SEARCH ENGINES
@@ -280,7 +250,6 @@ var searchEngines = {
 var searchKeys = Object.keys(searchEngines);
 
 populateSearchList();
-populateBookmarkList();
 
 // get time once so as to avoid 1s delay
 getTime();
