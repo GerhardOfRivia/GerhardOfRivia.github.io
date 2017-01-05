@@ -1,8 +1,8 @@
 {% unless include %}{% assign include = {} %}{% endunless %}
 {% unless include.max %}{% assign include.max = -1 %}{% endunless %}
-<ul>{% for meeting in site.posts %}{% if include.max < 0 or include.max >= forloop.index %}
-	<li>
-		{{ meeting.date | date: "%-d&nbsp;%B&nbsp;%Y" }} - {{ meeting.title }}
+<ul>{% for post in site.posts %}
+	<li>{% if include.max < 0 or include.max >= forloop.index %}
+		{{ post.date | "%-d&nbsp;%B&nbsp;%Y" }} - {{ post.title }}
 	</li>
 	{% endif %}{% endfor %}
 </ul>
