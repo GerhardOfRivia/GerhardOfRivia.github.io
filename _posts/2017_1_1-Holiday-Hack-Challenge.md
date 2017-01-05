@@ -79,17 +79,19 @@ if __name__ == '__main__':
 
 ### Santa's Instagram
 
-Deep in the picture northpolewonderland.com
+Deep in the picture www.northpolewonderland.com
+
+`dig northpolewonderland.com`
 
 ```
 ;; ANSWER SECTION:
 www.northpolewonderland.com. 3600 IN CNAME northpolewonderland.com.
-northpolewonderland.com.     887  IN A 130.211.124.143
+northpolewonderland.com.     887  IN A XXX.XXX.XXX.XXX
 ```
 
-We then asked Tom in the Tree house. "130.211.124.143"
+We then asked Tom in the Tree house. "XXX.XXX.XXX.XXX"
 
-"Tom Hessman - 130.211.124.143 is in scope, but only for downloading files. No other attcks against this host, or other deviant wiles!"
+"Tom Hessman - XXX.XXX.XXX.XX is in scope, but only for downloading files. No other attcks against this host, or other deviant wiles!"
 
 `wget http://northpolewonderland.com/SantaGram_v4.2.zip`
 
@@ -201,6 +203,8 @@ Note: l = 16-bit littleendian
 
 ### Wumpus
 
+[comment]: <> I would want to know how to cheat.
+
 ```
 *******************************************************************************
 *                                                                             *
@@ -244,6 +248,11 @@ key: open_sesame
 ```
 
 ### War Games
+
+
+[comment]: <> " > " From the termianl.
+
+[comment]: <> " < " Input from me.
 
 ```
 > GREETINGS PROFESSOR FALKEN.
@@ -379,5 +388,188 @@ Press Enter to initiate time travel sequence.
 
 ## Part Four
 
+[comment]: <> Inside the APK file.
 
-[comment]: <> I don't know where to start this.
+`grep -n http strings.xml`
+
+```
+strings.xml:24:    <string name="analytics_launch_url">https://analytics.northpolewonderland.com/report.php?type=launch</string>
+strings.xml:25:    <string name="analytics_usage_url">https://analytics.northpolewonderland.com/report.php?type=usage</string>
+strings.xml:29:    <string name="banner_ad_url">http://ads.northpolewonderland.com/affiliate/C9E380C8-2244-41E3-93A3-D6C6700156A5</string>
+strings.xml:32:    <string name="debug_data_collection_url">http://dev.northpolewonderland.com/index.php</string>
+strings.xml:34:    <string name="dungeon_url">http://dungeon.northpolewonderland.com/</string>
+strings.xml:35:    <string name="exhandler_url">http://ex.northpolewonderland.com/exception.php</string>
+```
+---
+
+
+`dig analytics.northpolewonderland.com`
+
+```
+;; ANSWER SECTION:
+analytics.northpolewonderland.com. 1426IN API XXX.XXX.XXX.XXX
+
+```
+
+[comment]: <> Inside the game.... At Tom Hessman
+
+> Yes! XXX.XXX.XXX.XXX is in scope! Just make sure you don't launch denial of service attacks, or interfere with the host's production processing. Dirbuster will not help you.
+
+`nmap -sC analytics.northpolewonderland.com`
+
+```
+Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 16:57 MST
+Nmap scan report for analytics.northpolewonderland.com (104.198.252.157)
+Host is up (0.013s latency).
+rDNS record for 104.198.252.157: 157.252.198.104.bc.googleusercontent.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   1024 5d:5c:37:9c:67:c2:40:94:b0:0c:80:63:d4:ea:80:ae (DSA)
+|   2048 f2:25:e1:9f:ff:fd:e3:6e:94:c6:76:fb:71:01:e3:eb (RSA)
+|_  256 4c:04:e4:25:7f:a1:0b:8c:12:3c:58:32:0f:dc:51:bd (ECDSA)
+443/tcp open  https
+| http-git: 
+|   104.198.252.157:443/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|_    Last commit message: Finishing touches (style, css, etc) 
+| http-title: Sprusage Usage Reporter!
+|_Requested resource was login.php
+| ssl-cert: Subject: commonName=analytics.northpolewonderland.com
+| Subject Alternative Name: DNS:analytics.northpolewonderland.com
+| Not valid before: 2016-12-07T17:35:00
+|_Not valid after:  2017-03-07T17:35:00
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+
+Nmap done: 1 IP address (1 host up) scanned in 5.82 seconds
+```
+
+[comment]: <> On the terminal
+
+`curl https://analytics.northpolewonderland.com/report.php?type=launch`
+
+> Only application/json POSTs are accepted!
+
+`curl -H "Content-Type: application/json" -X POST -d '{"username":"guest","password":"busyreindeer78"}' https://analytics.northpolewonderland.com/report.php?type=launch`
+
+> {"result":200,"msg":"Success!"}
+
+`curl -H "Content-Type: application/json" -X POST -d '{"username":"guest","password":"busyreindeer78"}' https://analytics.northpolewonderland.com/report.php?type=php
+
+> {"result":500,"msg":"<em>type<\/em> parameter must be either launch or usage"}
+
+`curl -H "Content-Type: application/json" -X POST -d '{"username":"guest","password":"busyreindeer78"}' https://analytics.northpolewonderland.com/report.php?type=usage
+
+> {"result":200,"msg":"Success!"}
+
+[comment]: <> Hmmmmmmmm I am not sure.
+
+---
+
+
+`dig ads.northpolewonderland.com`
+
+[comment]: <> Inside the game.... At Tom Hessman
+
+> Yes! XXX.XXX.XXX.XXX is in scope! Just make sure you don't launch denial of service attacks, or interfere with the host's production processing. Dirbuster will not help you.
+
+`nmap -sC ads.northpolewonderland.com`
+
+```
+Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 17:10 MST
+Nmap scan report for ads.northpolewonderland.com (104.198.221.240)
+Host is up (0.013s latency).
+rDNS record for 104.198.221.240: 240.221.198.104.bc.googleusercontent.com
+Not shown: 998 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   1024 cf:4c:e0:20:6d:e7:c6:b1:6b:9f:ac:75:45:16:b1:93 (DSA)
+|   2048 b9:a4:df:1e:34:0f:58:3e:2c:b7:e6:c6:77:0f:f5:3b (RSA)
+|_  256 02:ec:fc:80:c0:fc:76:b3:cd:d2:64:39:af:3c:13:b3 (ECDSA)
+80/tcp open  http
+|_http-title: Ad Nauseam - Stupid Ads for Stupid People
+
+Nmap done: 1 IP address (1 host up) scanned in 4.90 seconds
+
+```
+
+[comment]: <> .... Yes I did read that.
+
+[comment]: <> And now I don't know what to do.
+
+---
+
+`dig dev.northpolewonderland.com`
+
+[comment]: <> Inside the game.... At Tom Hessman
+
+> Yes! XXX.XXX.XXX.XXX is in scope! Just make sure you don't launch denial of service attacks, or interfere with the host's production processing. Dirbuster will not help you.
+
+`nmap -sC dev.northpolewonderland.com`
+
+```
+Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 16:55 MST
+Nmap scan report for dev.northpolewonderland.com (35.184.63.245)
+Host is up (0.013s latency).
+rDNS record for 35.184.63.245: 245.63.184.35.bc.googleusercontent.com
+Not shown: 998 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   1024 79:a9:ac:53:73:c7:87:69:61:c8:6f:7c:cd:e4:5d:f2 (DSA)
+|   2048 f2:fb:1c:aa:92:78:ae:04:7d:19:f9:74:e8:91:00:b6 (RSA)
+|_  256 5e:05:a6:1b:76:72:74:2b:9f:a5:e5:06:f8:fa:4f:39 (ECDSA)
+80/tcp open  http
+|_http-title: Site doesn't have a title (application/json).
+
+Nmap done: 1 IP address (1 host up) scanned in 5.28 seconds
+```
+---
+
+`dig dungeon.northpolewonderland.com`
+
+[comment]: <> Inside the game.... At Tom Hessman
+
+> Yes! XXX.XXX.XXX.XXX is in scope! Just make sure you don't launch denial of service attacks, or interfere with the host's production processing. Dirbuster will not help you.
+
+`nmap -sC dev.northpolewonderland.com`
+
+```
+nmap -sC dungeon.northpolewonderland.com
+
+Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 17:11 MST
+Nmap scan report for dungeon.northpolewonderland.com (35.184.47.139)
+Host is up (0.013s latency).
+rDNS record for 35.184.47.139: 139.47.184.35.bc.googleusercontent.com
+Not shown: 983 closed ports
+PORT      STATE    SERVICE
+1/tcp     filtered tcpmux
+3/tcp     filtered compressnet
+4/tcp     filtered unknown
+6/tcp     filtered unknown
+7/tcp     filtered echo
+9/tcp     filtered discard
+13/tcp    filtered daytime
+17/tcp    filtered qotd
+19/tcp    filtered chargen
+22/tcp    open     ssh
+| ssh-hostkey:
+|   1024 c0:5a:84:94:cf:6f:b9:23:c8:23:32:66:2d:e2:e7:6e (DSA)
+|   2048 c4:cf:f2:c3:c5:63:26:bb:34:ab:b6:fe:a0:73:91:49 (RSA)
+|_  256 78:4a:3e:2f:24:d1:14:eb:6e:53:7d:5a:6c:0a:42:af (ECDSA)
+25/tcp    filtered smtp
+37/tcp    filtered time
+80/tcp    open     http
+|_http-title: About Dungeon
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+11111/tcp open     vce
+
+Nmap done: 1 IP address (1 host up) scanned in 2.33 seconds
+```
