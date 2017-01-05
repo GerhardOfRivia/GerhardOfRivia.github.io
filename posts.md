@@ -28,6 +28,6 @@ int main() {
 // what is the answer?
 ```
 
-## Blog blog blog
+## Posts
 
 {% include blog.html %}
