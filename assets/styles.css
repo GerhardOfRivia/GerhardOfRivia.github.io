@@ -645,7 +645,7 @@ th {
     background-color: #555;
     color: white;
 }
-#date, #time {
+.spacetime {
     margin-left: auto;
     margin-right: auto;
     text-align: center
