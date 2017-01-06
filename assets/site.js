@@ -21,10 +21,11 @@ function getTime(){
     time += ((min < 10) ? ":0" : ":") + min;
     time += ((sec < 10) ? ":0" : ":") + sec;
 
-    document.getElementById("time").innerHTML = time;
-
-    var monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+    var monthNames = [
+        "January", "February", "March", 
+        "April", "May", "June",
+        "July", "August", "September", 
+        "October", "November", "December"
     ];
 
     var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -35,7 +36,7 @@ function getTime(){
     var yer     = currentTime.getFullYear();
     var date    = dayNames[nam] + " " + monthNames[mon] + " " + day + " " + yer;
 
-    document.getElementById("date").innerHTML = date;
+    document.getElementById("spacetime").innerHTML = time + " " + date;
 }
 /*
  * SEARCH BOX
