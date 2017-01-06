@@ -647,7 +647,8 @@ th {
 }
 #date, #time {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    text-align: center
 }
 textarea {
     width: 100%;
