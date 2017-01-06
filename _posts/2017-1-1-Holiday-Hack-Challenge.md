@@ -1,7 +1,3 @@
-----
--title: "Holiday Hack Challenge 2016"
-----
-
 ## Part One
 
 ### Santa's Twitter

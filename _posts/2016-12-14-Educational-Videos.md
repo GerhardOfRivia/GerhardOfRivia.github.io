@@ -1,6 +1,3 @@
-----
--title: "Educational Videos"
-----
 
 ##The more you know about Hello World.
 
