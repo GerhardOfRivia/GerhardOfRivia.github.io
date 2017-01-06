@@ -1,7 +1,5 @@
 ----
--layout: post
 -title: "Educational Videos"
--date: 2016-12-14
 ----
 
 ##The more you know about Hello World.

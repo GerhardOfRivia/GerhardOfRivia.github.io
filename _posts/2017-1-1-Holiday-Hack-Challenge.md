@@ -1,7 +1,5 @@
 ----
--layout: post
 -title: "Holiday Hack Challenge 2016"
--date: 2017-1-1
 ----
 
 ## Part One
