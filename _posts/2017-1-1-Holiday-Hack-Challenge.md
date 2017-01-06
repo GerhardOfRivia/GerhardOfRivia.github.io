@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Part One
 
 ### Santa's Twitter

@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 ## The more you know about Hello World.
 
