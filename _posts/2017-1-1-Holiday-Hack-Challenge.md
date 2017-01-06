@@ -4,8 +4,6 @@
 -date: 2017-1-1
 ----
 
-# 2016 Holiday Hack Challenge
-
 ## Part One
 
 ### Santa's Twitter
