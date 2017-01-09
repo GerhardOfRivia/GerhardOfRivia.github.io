@@ -462,7 +462,11 @@ Nmap done: 1 IP address (1 host up) scanned in 5.82 seconds
 
 > {"result":200,"msg":"Success!"}
 
-[comment]: <> Hmmmmmmmm I am not sure.
+[comment]: <> On a web browser.
+
+`https://analytics.northpolewonderland.com/`
+
+[comment]: <> Login in and up at the top nav bar [mp3]
 
 ---
 
@@ -525,6 +529,10 @@ PORT   STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 5.28 seconds
 ```
+
+`curl -H "Content-Type: application/json" -X POST -d '{"username":"guest","password":"busyreindeer78"}' http://dev.northpolewonderland.com`
+
+
 ---
 
 `dig dungeon.northpolewonderland.com`
@@ -533,11 +541,9 @@ Nmap done: 1 IP address (1 host up) scanned in 5.28 seconds
 
 > Yes! XXX.XXX.XXX.XXX is in scope! Just make sure you don't launch denial of service attacks, or interfere with the host's production processing. Dirbuster will not help you.
 
-`nmap -sC dev.northpolewonderland.com`
+`nmap -sC dungeon.northpolewonderland.com`
 
 ```
-nmap -sC dungeon.northpolewonderland.com
-
 Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 17:11 MST
 Nmap scan report for dungeon.northpolewonderland.com (35.184.47.139)
 Host is up (0.013s latency).
