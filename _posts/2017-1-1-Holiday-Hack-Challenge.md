@@ -2,6 +2,9 @@
 layout: default
 ---
 
+Holiday Hack Challenge
+---
+
 ## Part One
 
 ### Santa's Twitter
