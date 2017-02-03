@@ -6,7 +6,7 @@ layout: default
 
 What are they?
 
-[Remote procedure call](https://en.wikipedia.org/wiki/Remote_procedure_call])
+[Remote procedure call](https://en.wikipedia.org/wiki/Remote_procedure_call)
 
 ## Error semantics
 
@@ -21,7 +21,7 @@ If errors occur, the following can happen, depending on the specified error tole
 | Maybe | ... not sent again.|no treatment|
 | At-least-once |... sent once again.| No | The remote procedure is executed repeatedly at a receiving duplicate (recommended only for idempotent operations).
 |At-most-once | ... sent once again. | Yes | Duplicates are filtered, either complete execution of the job, or error message.
-|Exactly-once | ... sent once again. | Yes | DuplicatesDuplicates are also filtered. Furthermore, the execution of the job beyond the restart is ensured even in the event of a system failure. However, in some books it is stated that exactly-once is not possible with distributed systems.
+|Exactly-once | ... sent once again. | Yes | Duplicates are also filtered. Furthermore, the execution of the job beyond the restart is ensured even in the event of a system failure. However, in some books it is stated that exactly-once is not possible with distributed systems.
 
 In general however: no guarantee can be given. If, for example, a network node fails permanently, no single execution is possible in any case.
 
@@ -70,8 +70,8 @@ For each message retrieved by a receiver an acknowledgement is sent back to the 
 
 - 
 
-[Apache Storm][http://storm.apache.org/index.html]
+[Apache Storm](http://storm.apache.org/index.html)
 
-[Storm: Distributed and Fault-Tolerant Real-time Computation][https://www.infoq.com/presentations/Storm-Introduction]
+[Storm: Distributed and Fault-Tolerant Real-time Computation](https://www.infoq.com/presentations/Storm-Introduction)
 
-[Messgae Guarante][http://storm.apache.org/releases/current/Guaranteeing-message-processing.html]
+[Messgae Guarante](http://storm.apache.org/releases/current/Guaranteeing-message-processing.html)
