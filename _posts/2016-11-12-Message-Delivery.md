@@ -38,7 +38,7 @@ How can communication partners or a Message-oriented Middleware ensure that mess
 
 ### Solution
 
-For each message retrieved by a receiver an acknowledgement is sent back to the message sender. In case this acknowledgement is not received after a certain time frame, the message is resend.
+For each message retrieved by a receiver an acknowledgement is sent back to the message sender. In case this acknowledgement is not received after a certain time frame, the message is resent.
 
 ### Situation
 

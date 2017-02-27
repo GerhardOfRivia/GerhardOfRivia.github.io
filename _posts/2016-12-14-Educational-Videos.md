@@ -2,8 +2,7 @@
 layout: default
 ---
 
-Educational Videos
----
+# Educational Videos
 
 ## The more you know about Hello World.
 
@@ -21,6 +20,6 @@ Educational Videos
 
 [![Valgrind](http://img.youtube.com/vi/fvTsFjDuag8/0.jpg)](http://www.youtube.com/watch?v=fvTsFjDuag8 "CS50 Valgrind.")
 
-## The more you know about Algorithms.
+## The more you know about Optimazation.
 
-[![Valgrind](http://img.youtube.com/vi/fHNmRkzxHWs/0.jpg)](http://www.youtube.com/watch?v=fHNmRkzxHWs "C++ Algorithms.")
+[![C++ MircoTransaction](http://img.youtube.com/vi/fHNmRkzxHWs/0.jpg)](http://www.youtube.com/watch?v=fHNmRkzxHWs "C++ Algorithms.")
