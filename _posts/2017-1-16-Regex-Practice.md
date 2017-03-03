@@ -24,6 +24,9 @@ https://mediatemple.net
 
 Character classes
 -------
+
+| Set | Explination |
+|---|---|
 | `.` | Getany character except newline |
 | `\w \d \s` | word, digit, whitespace |
 | `\W \D \S` | not word, digit, whitespace |
@@ -33,17 +36,26 @@ Character classes
 
 Anchors
 -------
+
+| Set | Explination |
+|---|---|
 | `^abc$` | start / end of the string |
 | `\b \B` | word, not-word boundary |
 
 Escaped characters
 -------
+
+| Set | Explination |
+|---|---|
 | `\. \* \\` | escaped special characters |
 | `\t \n \r` | tab, linefeed, carriage return |
 | `\u00A9` | unicode escaped © |
 
 Groups & Lookaround
 -------
+
+| Set | Explination |
+|---|---|
 |` (abc)` | capture group |
 |` \1` | backreference to group #1 |
 |` (?:abc)` | non-capturing group |
@@ -52,6 +64,9 @@ Groups & Lookaround
 
 Quantifiers & Alternation
 -------
+
+| Set | Explination |
+|---|---|
 | `a* a+ a?` | 0 or more, 1 or more, 0 or 1
 | `a{5} a{2,}` | exactly five, two or more
 | `a{1,3}` | between one & three
