@@ -87,25 +87,25 @@ Adding the super or windows key for quick command.
 
 The default keyboard shortcuts are listed at `man dwm`
 
-
-> Alt+Shift+Enter
->   Launch st
-> Alt+Shift+C
->    Kill a client (a window, if you must insist)
-> Alt+t
->    Switch to tile layout
-> Alt+m
->    Switch to monocle layout
-> Alt+f
->    Switch to floating layout
-> Alt+b
->    Show/hide bar
-> Alt+p
->    Launch dmenu
-> Alt+[num]
->    Switch to tag [num]
-> Alt+Tab
->    Switch back to previous tab
-> Alt+Shift+Q
->    Quit dwm
-
+```
+Alt+Shift+Enter
+  Launch st
+Alt+Shift+C
+   Kill a client (a window, if you must insist)
+Alt+t
+   Switch to tile layout
+Alt+m
+   Switch to monocle layout
+Alt+f
+   Switch to floating layout
+Alt+b
+   Show/hide bar
+Alt+p
+   Launch dmenu
+Alt+[num]
+   Switch to tag [num]
+Alt+Tab
+   Switch back to previous tab
+Alt+Shift+Q
+   Quit dwm
+```
