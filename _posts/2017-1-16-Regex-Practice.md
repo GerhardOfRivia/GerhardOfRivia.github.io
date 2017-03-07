@@ -73,7 +73,7 @@ Quantifiers & Alternation
 | `a+? a{2,}?` | match as few as possible
 | `ab|cd` | match ab or cd
 
-Get integer & deiaml numbers
+Get integer & decimal numbers
 
 `/(?:\d*\.)?\d+/g`
 
