@@ -4,21 +4,23 @@ layout: default
 
 # Java - Generic Blocking Queue Class
 
-## A problem of producing and consuming
+**Problems of producing and consuming**
 
 + [Dining Pholosophers](https://en.wikipedia.org/wiki/Dining_philosophers_problem)
 
-### You cannot use anything that is part of the java.util.concurrent package.
+### For example
+
+**You cannot use anything that is part of the java.util.concurrent package.**
 
 `import java.util.concurrent.BlockingQueue;`
 
-> BlockingQueue implementations are thread-safe. All queuing methods are atomic in nature and use internal locks.
+> BlockingQueue implementations are thread-safe. Along with all queuing methods are atomic in nature and use internal locks.
 
-## Problem with Unbounded queues
+### Limit the size
 
-+ A producers can get far ahead of the consumers with an unbounded queue. If consumer is not catching up with producer then it may cause an OutOfMemoryError. In situations like these, it may be better to signal a would-be producer that the queue is full, and to give up quickly with a failure. In other words: the producers are naturally throttled.
++ With unbounded queues a producers can get far ahead of the consumers with an unbounded queue. If consumer is not catching up with producer then it may cause an OutOfMemoryError. In situations like these, it may be better to signal a would-be producer that the queue is full, and to give up quickly with a failure. In other words: the producers are naturally throttled.
 
-## When to use a Blocking queue
+### When to use a Blocking queue
 
 + Blocking Queue is normally used in concurrent application. IE: more then one thread of execution.
 + It provides a correct, thread-safe implementation
