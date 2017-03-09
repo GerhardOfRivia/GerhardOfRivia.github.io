@@ -139,3 +139,7 @@ import -window root -display :0.1 -screen /tmp/1.png
 convert +append /tmp/0.png /tmp/1.png screenshot.png
 rm /tmp/{0,1}.png
 ```
+
+### Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/AsynchronousGillz/SBAR/master/0.png)
