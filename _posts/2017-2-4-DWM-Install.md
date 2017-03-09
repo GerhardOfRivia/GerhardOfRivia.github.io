@@ -109,3 +109,33 @@ Alt+Tab
 Alt+Shift+Q
    Quit dwm
 ```
+
+### Adding a background.
+
+Install the feh package.
+
+`sudo pacman -S feh`
+
+`feh --bg-scale /path/to/earth.png`
+
+### Taking a screenshot
+
+**ImageMagick/GraphicsMagick**
+
+An easy way to take a screenshot of your current system is using the import command:
+
+**Note**: import is part of the imagemagick package.
+
+`pacman -S imagemagick`
+
+`import -window root screenshot.jpg`
+
+**Screenshot of multiple X screens**
+
+If you run twinview or dualhead, simply take the screenshot twice and use imagemagick to paste them together:
+```
+import -window root -display :0.0 -screen /tmp/0.png
+import -window root -display :0.1 -screen /tmp/1.png
+convert +append /tmp/0.png /tmp/1.png screenshot.png
+rm /tmp/{0,1}.png
+```
