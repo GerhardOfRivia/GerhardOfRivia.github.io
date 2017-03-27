@@ -2,8 +2,6 @@
 layout: posts
 ---
 
-# Regex - Learn, Build, Test
-
 [RegExr](http://regexr.com/)
 
 ```

@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-# DWM - window manager
+### DWM - window manager
 
 DWM (dynamic window manager, http://dwm.suckless.org/) is an extremely lightweight tiling window manager written in C which saves screen space and works pretty well as long as you enjoy simple programs doing only a few tasks.
 

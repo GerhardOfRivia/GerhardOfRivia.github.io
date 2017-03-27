@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-# Java - Generic Blocking Queue Class
+### Generic Blocking Queue Class
 
 **Problems of producing and consuming**
 

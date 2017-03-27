@@ -2,9 +2,7 @@
 layout: posts
 ---
 
-# Collect Curl Data
-
-## curl - transfer a URL
+#curl - transfer a URL
 
 `$ curl --version`
 
