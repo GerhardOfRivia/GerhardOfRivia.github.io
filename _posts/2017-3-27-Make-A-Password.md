@@ -19,8 +19,8 @@ $ mkpasswd
 ztVT%K6rG2uGiDMbtQN5bPlyZzmjwk Ur^%A!d98iSbu4i*iLl
 ```
 
-Use with Warded. A minimal passphrase manager using Chacha20-Poly1305
-[Warded](https://github.com/hexid/warded)
+Use with [Warded](https://github.com/hexid/warded). A minimal passphrase manager using Chacha20-Poly1305
+
 
 
 
