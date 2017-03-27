@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 ---
 
 # Message Delivery and Remote procedure call

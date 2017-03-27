@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 ---
 
 # Diffie–Hellman key exchange

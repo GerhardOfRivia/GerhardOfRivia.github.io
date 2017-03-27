@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 ---
 
 # Java - Generic Blocking Queue Class
