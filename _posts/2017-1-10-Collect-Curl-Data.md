@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-#curl - transfer a URL
+### curl - transfer a URL
 
 `$ curl --version`
 
