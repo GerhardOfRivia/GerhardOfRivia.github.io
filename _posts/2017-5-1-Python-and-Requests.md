@@ -24,8 +24,8 @@ $
 
 | Objects | Libraries |
 |---|---|
-| Request | Encodes the Python object from a JSON string representation. |
-| Session | Decodes a python object into a string object. |
+| Request | The Request object contains all of the information returned by the server. |
+| Session | The Session object allows you to persist certain parameters across requests. |
 
 ## Loading a web page in Python (Request)
 
@@ -42,7 +42,7 @@ Python requests function allows for easy simple human REST calls.
 >>> session = Session()
 >>> prepped = Request('GET', url, headers={'Content-Type':’application/json’}).prepare()
 >>> resp = s.send(prepped)
->>> print(resp.text())
+>>> print(resp.json())
 ```
 
 ## Catching Execptions
@@ -72,4 +72,23 @@ The following example shows catching exceptions created by using the Requests ob
 >>>     sys.exit(1)
 ```
 
+### Tricks with a Post
 
+There are times that you may want to send data that is not form-encoded. If you pass in a string instead of a dict, that data will be posted directly.
+
+```
+>>> import json
+>>> url = 'https://api.github.com/some/endpoint'
+>>> payload = {'some': 'data'}
+>>> r = requests.post(url, data=json.dumps(payload))
+```
+
+Instead of encoding the dict yourself, you can also pass it directly using the json parameter (added in version 2.4.2) and it will be encoded automatically:
+
+```
+>>> url = 'https://api.github.com/some/endpoint'
+>>> payload = {'some': 'data'}
+>>> r = requests.post(url, json=payload)
+```
+
+Source: [Requests: More complicated post](http://docs.python-requests.org/en/master/user/quickstart/#more-complicated-post-requests)
