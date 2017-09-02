@@ -21,6 +21,7 @@ $
 ```
 
 ## Request Objects
+
 | Objects | Libraries |
 |---|---|
 | Request | Encodes the Python object from a JSON string representation. |
