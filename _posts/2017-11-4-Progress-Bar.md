@@ -2,14 +2,12 @@
 layout: posts
 ---
 
-## Software explination and visualization
+### Please wait while we do something.
 
-
-### Bash
+#### Bash
 
 ```bash
 #!/bin/bash
-# progress-bar.sh
 
 # Author: Dotan Barak (very minor revisions by ABS Guide author).
 
@@ -21,8 +19,7 @@ BAR_CHAR_FULL="="
 BRACKET_CHARS=2
 LIMIT=100
 
-print_progress_bar()
-{
+function print_progress_bar() {
         # Calculate how many characters will be full.
         let "full_limit = ((($1 - $BRACKET_CHARS) * $2) / $LIMIT)"
 
@@ -44,23 +41,25 @@ print_progress_bar()
         printf "%3d%% %s" $2 ${bar_line}
 }
 
-# Here is a sample of code that uses it.
-MAX_PERCENT=100
-for ((i=0; i<=MAX_PERCENT; i++)); do
-        print_progress_bar ${BAR_WIDTH} ${i}
-        echo -en "\r"
-        #
-        usleep 10000
-        # ... Or run some other commands ...
-        #
-done
-
-echo ""
 
 exit
 ```
 
-### Python
+Example:
+
+```bash
+# Here is a sample that waits for 5 minutes
+MAX_PERCENT=100
+for ((i=0; i<=MAX_PERCENT; i++)); do
+        print_progress_bar ${BAR_WIDTH} ${i}
+        echo -en "\r"
+        sleep 3
+done
+echo ""
+
+```
+
+#### Python
 
 ```python
 #!/usr/bin/env python3
