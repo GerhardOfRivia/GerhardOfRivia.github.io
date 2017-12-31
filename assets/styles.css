@@ -614,29 +614,25 @@ td {
     text-align: left;
     padding: 8px;
 }
-.re-green {
-    background-color: #61b70f;
-    background-size: 20px 20px;
-    border-radius: 10px;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
+.circle {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%; /* the magic */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-.re-purple {
-    border-bottom: 20px solid purple;
-    border-right: 11.5px solid transparent;
-    border-left: 11.5px solid transparent;
-    display: inline-block;
-    vertical-align: middle;
+.blue {
+    background-color: blue;
 }
-.re-red {
+.green {
+    background-color: green;
+}
+.red {
     background-color: red;
-    background-size: 20px 20px;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    vertical-align: middle;
 }
 tr:nth-child(even) {
     background-color: #f2f2f2;
