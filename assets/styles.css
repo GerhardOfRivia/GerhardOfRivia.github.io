@@ -267,6 +267,12 @@ nav.sidemenu>ul>li ul {
     padding: 0;
     list-style: none
 }
+.navbar-toggle {
+    background: #9f9f9f;
+}
+.navbar-toggle .icon-bar {
+    background: white;
+}
 footer {
     padding-top: 10px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2)
