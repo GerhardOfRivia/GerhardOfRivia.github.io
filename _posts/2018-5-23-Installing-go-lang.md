@@ -4,7 +4,7 @@ layout: posts
 
 ## Pick your download
 
-Now download the Go language binary archive file. [DOWNLOAD][https://golang.org/dl/] 
+Now download the Go language binary archive file. [DOWNLOAD](https://golang.org/dl/)
 
 ```
 wget https://dl.google.com/go/go1.10.2.linux-amd64.tar.gz
@@ -54,4 +54,4 @@ src/
 
 ```
 
-Source: [How to Write Go Code][https://golang.org/doc/code.html]
+Source: [How to Write Go Code](https://golang.org/doc/code.html)
