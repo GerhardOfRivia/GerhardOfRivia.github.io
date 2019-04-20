@@ -198,7 +198,6 @@ header {
 }
 #header-bottom nav a:hover {
     color: #c55628;
-    border-bottom: solid 2px #c55628
 }
 #header-bottom.sticky {
     position: relative;
