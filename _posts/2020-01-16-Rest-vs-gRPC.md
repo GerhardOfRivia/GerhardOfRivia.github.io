@@ -2,15 +2,16 @@
 layout: posts
 ---
 
-### rest vs grpc
+### python flask rest vs python grpc
 
-Want to show why when doing large message processing with gRPC can be better then rest. For this i used google cloud platform and tested it with some f1-micro instances.
+Want to show why when doing large message processing with gRPC can be better then rest. For this I used Google Cloud Platform and tested it with some f1-micro instances. For the first test I sent two numbers to be added together, something simple. For the data test I sent a simple image 1.58 MB in size and extracted the size out of the image. With this both applications were written in python and I used a simple flask app for the rest server.
 
 | # | Region | Zone |
 | --- | --- | --- |
 | 1 | us-central1-a | us-central1-a |
 | 2 | us-west1-a | us-central1-b |
 
+I wanted to also test different regions as the more data you send the more the latency increases.
 
 | Method | Local | Same-Zone | Different Region | Units |
 |--- |--- |--- |--- |--- |
@@ -31,3 +32,6 @@ gRPC is faster in both indavidual calls along with bulk calls. The overhead in r
 |   REST img| min 0.002443 max 0.01718 avg 0.0028231590000000017 | min 0.021344 max 0.27128 avg 0.033103111 | min 0.592812 max 24.263899 avg 0.7226483639999997 | Seconds |
 |   gRPC img| min: 0.003547000000000078 max: 0.006320999999999993 avg: 0.003930908999999988 | min: 0.004097000000000017 max: 0.009461999999999998 avg: 0.004400332999999999 | min: 0.0041599999999997195 max: 0.007658999999999999 avg: 0.004333685000000004 | Seconds |
 
+In conclusion when you need to send and process large sets of requests grpc has some benefits over rest.
+
+‾\_(ツ)_/‾
