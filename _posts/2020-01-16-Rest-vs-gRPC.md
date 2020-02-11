@@ -26,7 +26,7 @@ I wanted to also test different regions as the more data you send the more the l
 gRPC is faster in both indavidual calls along with bulk calls. The overhead in rest with restablishing the tcp connection for each call adds time to each call but also allows each call to be item potent. While grpc uses a single tcp connection reducing the time needed per call. With this the consistency is better with gRPC over REST as the min and max are closer to the avgerage. As for the local difference with the different zone, using a machine with only a single core probably increased the context switching on the single core cpu. Using a different language like go that does software context switching you could host both the sender and reciever on different go routines and see better preformance.
 
 | Method | Measurement | Local | Same-Zone | Different Region | Units |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |--- |--- |
 |   rest-add | min | 1.724 | 3.336 | 67.27 | Milliseconds |
 |   rest-add | max | 18.687 | 25.167 | 130.336 | Milliseconds |
 |   rest-add | avg | 2.076889 | 4.229187 |  72.282944 | Milliseconds |
