@@ -30,7 +30,7 @@ ax.plot([1, 2, 3])
 fig.savefig('test.png')
 ```
 
-or use an IObuffer cause why use the filesystem?
+or skip the filesystem keep it in memory?
 
 ```
 import matplotlib.pyplot as plt
