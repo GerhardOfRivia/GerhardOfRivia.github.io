@@ -15,11 +15,11 @@ I wanted to also test different regions as the more data you send the more the l
 
 | Method | Local | Same-Zone | Different Region | Units |
 |--- |--- |--- |--- |--- |
-|   REST add| 2.076889 | 4.229187 | 72.282943 | Milliseconds |
-|   gRPC add| 0.168965 | 0.238297 | 0.4623649 | Milliseconds |
-|   REST img| 2.823159 | 33.10311 | 722.64836 | Milliseconds |
-|   gRPC img| 3.930908 | 4.400332 | 4.3336850 | Milliseconds |
-|   PING    | 0.027000 | 1.489000 | 35.594000 | Milliseconds |
+|   rest-add | 2.076889 | 4.229187 | 72.282943 | Milliseconds |
+|   grpc-add | 0.168965 | 0.238297 | 0.4623649 | Milliseconds |
+|   rest-img | 2.823159 | 33.10311 | 722.64836 | Milliseconds |
+|   grpc-img | 3.930908 | 4.400332 | 4.3336850 | Milliseconds |
+|   ping     | 0.027000 | 1.489000 | 35.594000 | Milliseconds |
 
 > Measurements are the avgerage of 1000 requests 
 
@@ -39,6 +39,7 @@ gRPC is faster in both indavidual calls along with bulk calls. The overhead in r
 |   grpc-img | min | 3.547 | 4.097 | 4.16 | Milliseconds |
 |   grpc-img | max | 6.321 | 9.462 | 7.659 | Milliseconds |
 |   grpc-img | avg | 3.930909 | 4.400333 | 4.333685 | Milliseconds |
+
 
 In conclusion when you need to send and process large sets of requests grpc has some benefits over rest.
 
