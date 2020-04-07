@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Go and install
 ---
 
 **Pick your download**

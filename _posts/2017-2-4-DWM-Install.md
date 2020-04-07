@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: DWM plain and simple
 ---
 
 **DWM - window manager**

@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: python and dealing with json
 ---
 
 **Environment**

@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Holiday-Hack-Challenge
 ---
 
 **Rudolph?**

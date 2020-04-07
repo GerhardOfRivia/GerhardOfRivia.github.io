@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: rest vs grpc
 ---
 
 **python flask rest vs python grpc**

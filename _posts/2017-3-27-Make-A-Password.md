@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: bash password generator
 ---
 
 `$ cat ./mkpasswd`

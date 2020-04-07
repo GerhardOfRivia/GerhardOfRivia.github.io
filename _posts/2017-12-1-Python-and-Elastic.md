@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Searching elasticsearch
 ---
 
 **Searching elasticsearch in Python**

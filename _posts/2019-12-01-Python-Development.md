@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: How I do my base Python install
 ---
 
 **Python Install**

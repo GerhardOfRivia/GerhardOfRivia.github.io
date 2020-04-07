@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Logging, Bash and Python
 ---
 
 **Bash Logging made easy**

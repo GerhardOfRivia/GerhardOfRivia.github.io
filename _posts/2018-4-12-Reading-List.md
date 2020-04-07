@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: 2018 reading list
 ---
 
 Here is my 2018 read list,

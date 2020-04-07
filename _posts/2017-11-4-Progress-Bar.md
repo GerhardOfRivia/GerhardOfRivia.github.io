@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: loading bars
 ---
 
 **Please wait while we do something**

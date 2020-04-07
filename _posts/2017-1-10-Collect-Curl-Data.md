@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Curl Metrics
 ---
 
 **curl - transfer a URL**

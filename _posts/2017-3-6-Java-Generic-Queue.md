@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Java Blocking Queue
 ---
 
 **Generic Blocking Queue Class**

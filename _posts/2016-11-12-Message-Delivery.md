@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Remote procedure calls
 ---
 
 What are they?

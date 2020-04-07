@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Undefined Behavior
 ---
 
 **Define Undefined Behavior**

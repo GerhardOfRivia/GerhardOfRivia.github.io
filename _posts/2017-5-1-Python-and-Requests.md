@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Python and Requests
 ---
 
 **Environment**

@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Python Matplotlib
 ---
 
 **Python Matplotlib on a remote system**
