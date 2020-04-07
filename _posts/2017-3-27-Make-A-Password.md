@@ -12,7 +12,7 @@ LEN=${1:-50}
 </dev/urandom tr -cd ${CHAR:-'a-zA-Z0-9!@#%^*'} | fold -w ${LEN} | sed 1q
 ```
 
-### Example
+**Example**
 
 ```
 $ chmod 700 ./mkpasswd

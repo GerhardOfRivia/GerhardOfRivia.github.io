@@ -2,30 +2,27 @@
 layout: posts
 ---
 
+Here is my 2018 read list,
 
-## book list 
++ **Ready Player One** is a 2011 science fiction novel, and the debut novel of American author Ernest Cline. The story, set in a dystopia in 2045, follows protagonist Wade Watts on his search for an Easter egg in a worldwide virtual reality game, the discovery of which would lead him to inherit the game creator's fortune.
 
-### Fun
++ **Off to Be the Wizard** follows Martin Banks is just a normal guy who has made an abnormal discovery: he can manipulate reality, thanks to reality being nothing more than a computer program.
 
-+ Ready Player One
-+ Off to Be the Wizard
-+ Spell or High Water: Magic 2.0
++ **Spell or High Water: Magic 2.0** another adventure with Martin Banks
 
-### Fantasy
++ **The Last Wish** two collections of short stories preceding the main Witcher Saga, written by Polish fantasy writer Andrzej Sapkowski.
 
-+ The Last Wish
-+ Necronomicon
++ **Necronomicon** H.P. Lovecraft's reputation has grown tremendously over the decades, and he is now commonly regarded as one of the most important horror writers of the 20th century, exerting an influence that is widespread, though often indirect. So here is short story collection
 
-### Si-fi
++ **2001: A Space Odyssey** is a 1968 science fiction novel by British writer Arthur C. Clarke. It was developed concurrently with Stanley Kubrick's film version and published after the release of the film.
 
-+ 2001: A Space Odyssey
-+ The Hitchhiker's Guide to the Galaxy
++ **The Hitchhiker's Guide to the Galaxy** is a comedy science fiction series created by Douglas Adams. Originally a radio comedy broadcast on BBC Radio 4 in 1978, it was later adapted to other formats, including stage shows, novels, comic books, a 1981 TV series, a 1984 video game, and 2005 feature film.
 
-### Isaac Asimov Collection
+**Isaac Asimov Collection**
 
 I recommend reading the series in its proper chronological order, which is outlined below:
 
-#### The Robot Series
+**The Robot Series**
 
 1. 	I, Robot 	1950 	Collection of Short Stories
 2. 	The Caves of Steel 	1954 	The first Robot novel
@@ -33,13 +30,13 @@ I recommend reading the series in its proper chronological order, which is outli
 4. 	The Robots of Dawn 	1983 	The third Robot novel
 5. 	Robots and Empire 	1985 	The fourth and final Robot novel
 
-#### The Empire Series
+**The Empire Series**
 
 6. 	The Currents of Space 	1952 	The first Empire novel
 7. 	The Stars, Like Dust 	1951 	The second Empire novel
 8. 	Pebble in the Sky 	1950 	The third and final Empire novel
 
-#### The Foundation Series
+**The Foundation Series**
 
 9. 	Prelude to Foundation 	1988 	The first Foundation novel
 10. 	Forward the Foundation 	1992 	The second Foundation novel and the latest to be written

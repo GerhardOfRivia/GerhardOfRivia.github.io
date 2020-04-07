@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-### curl - transfer a URL
+**curl - transfer a URL**
 
 `$ curl --version`
 
@@ -18,7 +18,7 @@ Features: AsynchDNS IDN IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL 
 > 
 > Make curl display information on stdout after a completed transfer. The format is a string that may contain plain text mixed with any number of variables. The format can be specified as a literal "string", or you can have curl read the format from a file with "@filename" and to tell curl to read the format from stdin you write "@-".
 
-`curl_jason.txt`
+`curl_json.txt`
 
 ```
 { "url_effective" : "%{url_effective}", "remote_ip" : "%{remote_ip}", "speed_download" : "%{speed_download}", "time_namelookup" : "%{time_namelookup}", "time_connect" : %{time_connect}, "time_appconnect" : "%{time_appconnect}", "time_pretransfer" : "%{time_pretransfer}", "time_redirect" : "%{time_redirect}", "time_starttransfer" : "%{time_starttransfer}", "time_total" : "%{time_total}" }

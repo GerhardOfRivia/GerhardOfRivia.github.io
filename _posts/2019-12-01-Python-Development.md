@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-### Python Install
+**Python Install**
 
 Debian/Ubuntu install these packages using the following commands:
 
@@ -22,7 +22,7 @@ After the installations are complete, verify that you have pip installed:
 
 ```pip --version```
 
-### Using venv to isolate dependencies
+**Using venv to isolate dependencies**
 
 venv is a tool that creates isolated Python environments. These isolated environments can have separate versions of Python packages, which allows you to isolate one project's dependencies from the dependencies of other projects. We recommend that you always use a per-project virtual environment when developing locally with Python.
 
@@ -41,7 +41,7 @@ If you want to stop using the virtual environment and go back to your global Pyt
 
 ```deactivate```
 
-### PIP
+**PIP**
 
 Now you can install packages without affecting other projects or your global Python installation:
 

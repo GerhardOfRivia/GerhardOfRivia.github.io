@@ -2,30 +2,30 @@
 layout: posts
 ---
 
-### DWM - window manager
+**DWM - window manager**
 
 DWM (dynamic window manager, http://dwm.suckless.org/) is an extremely lightweight tiling window manager written in C which saves screen space and works pretty well as long as you enjoy simple programs doing only a few tasks.
 
 Download the source coe.
 
-### tar
+**tar**
 
 `wget http://dl.suckless.org/dwm/dwm-6.X.tar.gz`
 `tar xvzf dwm-6.X.tar.gz`
 
-### git
+**git**
 
 `git clone http://git.suckless.org/dwm`
 
-### apt-source
+**apt-source**
 
 `apt-get source dwm`
 
-### Step One
+**Step One**
 
 Now `cd dwm` here we can edit the config file.
 
-`make` 
+`make`
 
 To make sure we have all of dwm's dependencies.
 
@@ -37,7 +37,7 @@ On a Debian / Ubuntu distro you may have to install.
 + sharutils 
 + suckless-tools
 
-### Step Two
+**Step Two**
 
 Customizing dwm can be done by making changes to config.h and recompiling the window manager.
 
@@ -83,7 +83,7 @@ Adding the super or windows key for quick command.
 > 	{ SUPKEY,                       XK_i,      spawn,          {.v = inetcmd } },
 ```
 
-### Once installed.
+**Once installed**
 
 The default keyboard shortcuts are listed at `man dwm`
 
@@ -110,7 +110,7 @@ Alt+Shift+Q
    Quit dwm
 ```
 
-### Adding a background.
+**Adding a background**
 
 Install the feh package.
 
@@ -118,7 +118,7 @@ Install the feh package.
 
 `feh --bg-scale /path/to/earth.png`
 
-### Taking a screenshot
+**Taking a screenshot**
 
 **ImageMagick/GraphicsMagick**
 
@@ -140,6 +140,6 @@ convert +append /tmp/0.png /tmp/1.png screenshot.png
 rm /tmp/{0,1}.png
 ```
 
-### Screenshot
+**Screenshot**
 
 ![Screenshot](https://raw.githubusercontent.com/AsynchronousGillz/SBAR/master/0.png)

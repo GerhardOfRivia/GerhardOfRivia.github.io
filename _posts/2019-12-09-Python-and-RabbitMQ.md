@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-### Why?
+**Why?**
 
 What are message queues and why use message queues? In modern cloud architecture, applications are decoupled into smaller, independent building blocks that are easier to develop, deploy and maintain. Message queues provide communication and coordination for these distributed applications.
 
@@ -14,13 +14,13 @@ With this I thought I would show how simple the `pika` library in python.
 
 [Read More about pika and RabbitMQ]('https://www.rabbitmq.com/tutorials/tutorial-two-python.html')
 
-### imports
+**imports**
 
 ```
 import pika
 # Pika Python AMQP Client Library
 ```
 
-### code
+**code**
 
 <script src="https://gist.github.com/AsynchronousGillz/b1634db4388182d3903fbfeffb4c1ad9.js"></script>

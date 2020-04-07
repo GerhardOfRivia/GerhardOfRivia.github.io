@@ -2,9 +2,9 @@
 layout: posts
 ---
 
-### Please wait while we do something.
+**Please wait while we do something**
 
-#### Bash
+*Bash*
 
 ```bash
 #!/bin/bash
@@ -45,7 +45,7 @@ function print_progress_bar() {
 exit
 ```
 
-Example:
+**Example**:
 
 ```bash
 # Here is a sample that waits for 5 minutes
@@ -59,7 +59,7 @@ echo ""
 
 ```
 
-#### Python
+*Python*
 
 ```python
 #!/usr/bin/env python3
@@ -80,7 +80,7 @@ def progressbar(it, prefix="", size=60):
     sys.stdout.flush()
 ```
 
-Example:
+**Example**:
 
 ```python
 #!/usr/bin/env python3

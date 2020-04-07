@@ -2,7 +2,9 @@
 layout: posts
 ---
 
-## Environment
+**Searching elasticsearch in Python**
+
+**Environment**
 
 Before you start with using elasticsearch with python
 
@@ -15,7 +17,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-## Elasticsearch Functions 
+**Elasticsearch Functions**
 
 | Function | Libraries |
 |---|---|
@@ -25,17 +27,15 @@ Type "help", "copyright", "credits" or "license" for more information.
 | ping | Returns True if the cluster is up, False otherwise. |
 | scroll | Scroll a search request created by specifying the scroll parameter. |
 
-## Elasticsearch Helpers Functions 
+**Elasticsearch Helpers Functions**
 
 | Function | Libraries |
 |---|---|
 | scan | A simple iterator that yields all hits as returned by underlining scroll requests. |
 
-## Searching elasticsearch in Python
+*Python* 
 
-Python 
-
-### Syntax
+**Syntax**
 
 ```python3
 #!/usr/bin/env python3
@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
 ```
 
-JSON
+**JSON**
 
 ```json
 {

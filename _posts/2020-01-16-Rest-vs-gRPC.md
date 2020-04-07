@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-### python flask rest vs python grpc
+**python flask rest vs python grpc**
 
 Want to show why when doing large message processing with gRPC can be better then rest. For this I used Google Cloud Platform and tested it with some f1-micro instances. For the first test I sent two numbers to be added together, something simple. For the data test I sent a simple image 1.58 MB in size and extracted the size out of the image. With this both applications were written in python and I used a simple flask app for the rest server.
 

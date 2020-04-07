@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-### Define Undefined Behavior
+**Define Undefined Behavior**
 
 Code, we think to know what it will do.
 
@@ -29,7 +29,7 @@ void main () {
 
 What about this? What will this print?
 
-### Why Is Undefined Behavior Good?
+**Why Is Undefined Behavior Good?**
 
 Undefined behavior simplifies the compiler’s job, making it possible to generate very efficient code in certain situations.
 
@@ -47,7 +47,7 @@ void main () {
 }
 ```
 
-### Why Is Undefined Behavior Bad?
+**Why Is Undefined Behavior Bad?**
 
 When programmers cannot be trusted to reliably avoid undefined behavior, we end up with programs that silently misbehave.
 

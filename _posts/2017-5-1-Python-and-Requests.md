@@ -2,7 +2,7 @@
 layout: posts
 ---
 
-## Environment
+**Environment**
 
 Before you start with using requests in Python, you need to make sure you have the requests module available.
 
@@ -20,22 +20,22 @@ $ pip3 install requests
 $
 ```
 
-## Request Objects
+**Request Objects**
 
 | Objects | Libraries |
 |---|---|
 | Request | The Request object contains all of the information returned by the server. |
 | Session | The Session object allows you to persist certain parameters across requests. |
 
-## Loading a web page in Python (Request)
+**Loading a web page in Python (Request)**
 
 Python requests function allows for easy simple human REST calls.
 
-### Syntax
+**Syntax**
 
 `Request('HTTP VERB', url, data, headers)`
 
-### Example
+**Example**
 
 ```python
 >>> from requests import Request, Session
@@ -45,11 +45,11 @@ Python requests function allows for easy simple human REST calls.
 >>> print(resp.json())
 ```
 
-## Catching Execptions
+**Catching Execptions**
 
 Python can use json.dumps() function for outputing JSON. This function returns the string in json.
 
-### Example
+**Example**
 
 The following example shows catching exceptions created by using the Requests object.
 
@@ -72,7 +72,7 @@ The following example shows catching exceptions created by using the Requests ob
 >>>     sys.exit(1)
 ```
 
-### Tricks with a Post
+**Tricks with a Post**
 
 There are times that you may want to send data that is not form-encoded. If you pass in a string instead of a dict, that data will be posted directly.
 
