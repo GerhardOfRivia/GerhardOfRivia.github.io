@@ -316,6 +316,10 @@ footer a {
 #footer-links a {
     margin-left: 10px
 }
+.post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid #24292e
+}
 #github img {
     width: 25%;
     height: auto
