@@ -1,5 +1,14 @@
-<ul>
+<div class="posts">
   {% for post in site.posts %}
-  <li> <strong><a href="{{ post.url }}">{{ post.title }}</a></strong> - {{ post.date | date: "%-d %B %Y"}}</li>
+  <article class="post">    
+    
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+    <div class="entry">
+      {{ post.content | truncatewords:40}}
+    </div>
+    
+    <a href="{{ post.url }}" class="read-more">Read More</a>
+  </article>
   {% endfor %}
-</ul>
+</div>
