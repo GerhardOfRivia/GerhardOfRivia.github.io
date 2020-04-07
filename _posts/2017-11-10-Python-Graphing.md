@@ -22,9 +22,29 @@ You can either generate hardcopy on the filesystem by calling savefig:
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+
+plt.style.use('seaborn-whitegrid')
 fig = plt.figure()
-ax = fig.add_subplot(111)
-ax.plot([1,2,3])
+ax = fig.add_subplot(1, 1, 1)
+ax.plot([1, 2, 3])
 fig.savefig('test.png')
 ```
 
+or skip the filesystem keep it in memory?
+
+```
+import matplotlib.pyplot as plt
+plt.style.use('seaborn-whitegrid')
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
+ax.plot([1, 2, 3])
+buffer = io.BytesIO()
+# make a buffer
+plt.savefig(buffer, format='png', bbox_inches='tight', figsize=(5, 15))
+# save fig to the buffer
+buffer.seek(0)
+# reset the buffer to the start to read the buffer
+img = buffer.read()
+buffer.close()
+# img now contains the plot
+```

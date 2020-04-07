@@ -15,22 +15,31 @@ I wanted to also test different regions as the more data you send the more the l
 
 | Method | Local | Same-Zone | Different Region | Units |
 |--- |--- |--- |--- |--- |
-|   REST add| 2.076889 | 4.229187 | 72.282943 | Milliseconds |
-|   gRPC add| 0.168965 | 0.238297 | 0.4623649 | Milliseconds |
-|   REST img| 2.823159 | 33.10311 | 722.64836 | Milliseconds |
-|   gRPC img| 3.930908 | 4.400332 | 4.3336850 | Milliseconds |
-|   PING    | 0.027000 | 1.489000 | 35.594000 | Milliseconds |
+|   rest-add | 2.076889 | 4.229187 | 72.282943 | Milliseconds |
+|   grpc-add | 0.168965 | 0.238297 | 0.4623649 | Milliseconds |
+|   rest-img | 2.823159 | 33.10311 | 722.64836 | Milliseconds |
+|   grpc-img | 3.930908 | 4.400332 | 4.3336850 | Milliseconds |
+|   ping     | 0.027000 | 1.489000 | 35.594000 | Milliseconds |
 
 > Measurements are the avgerage of 1000 requests 
 
 gRPC is faster in both indavidual calls along with bulk calls. The overhead in rest with restablishing the tcp connection for each call adds time to each call but also allows each call to be item potent. While grpc uses a single tcp connection reducing the time needed per call. With this the consistency is better with gRPC over REST as the min and max are closer to the avgerage. As for the local difference with the different zone, using a machine with only a single core probably increased the context switching on the single core cpu. Using a different language like go that does software context switching you could host both the sender and reciever on different go routines and see better preformance.
 
-| Method | Local | Same-Zone | Different Region | Units |
-|--- |--- |--- |--- |--- |
-|   REST add| min 0.001724 max 0.018687 avg 0.002076889 | min 0.003336 max 0.025167 avg 0.004229187000000003 |  min 0.06727 max 0.130336 avg 0.07228294399999996| Seconds |
-|   gRPC add| min: 0.00014500000000000624 max: 0.0011429999999999774 avg: 0.00016896500000000047 | min: 0.00015699999999996272 max: 0.0010669999999999846 avg: 0.00023829700000000003 | min: 0.00039400000000000546 max: 0.0010719999999999896 avg: 0.00046236499999999936 | Seconds |
-|   REST img| min 0.002443 max 0.01718 avg 0.0028231590000000017 | min 0.021344 max 0.27128 avg 0.033103111 | min 0.592812 max 24.263899 avg 0.7226483639999997 | Seconds |
-|   gRPC img| min: 0.003547000000000078 max: 0.006320999999999993 avg: 0.003930908999999988 | min: 0.004097000000000017 max: 0.009461999999999998 avg: 0.004400332999999999 | min: 0.0041599999999997195 max: 0.007658999999999999 avg: 0.004333685000000004 | Seconds |
+| Method | Measurement | Local | Same-Zone | Different Region | Units |
+|--- |--- |--- |--- |--- |--- |
+|   rest-add | min | 1.724 | 3.336 | 67.27 | Milliseconds |
+|   rest-add | max | 18.687 | 25.167 | 130.336 | Milliseconds |
+|   rest-add | avg | 2.076889 | 4.229187 |  72.282944 | Milliseconds |
+|   grpc-add | min | 0.145 | 0.157 | 0.394 | Milliseconds |
+|   grpc-add | max | 1.143 | 1.067 | 1.072 | Milliseconds |
+|   grpc-add | avg | 0.168965 | 0.238297 | 0.462365 | Milliseconds |
+|   rest-img | min | 2.443 | 21.344 | 592.812 | Milliseconds |
+|   rest-img | max | 17.18 | 271.28 | 24263.899 | Milliseconds |
+|   rest-img | avg | 2.823159 | 33.103111 | 722.648364 | Milliseconds |
+|   grpc-img | min | 3.547 | 4.097 | 4.16 | Milliseconds |
+|   grpc-img | max | 6.321 | 9.462 | 7.659 | Milliseconds |
+|   grpc-img | avg | 3.930909 | 4.400333 | 4.333685 | Milliseconds |
+
 
 In conclusion when you need to send and process large sets of requests grpc has some benefits over rest.
 
