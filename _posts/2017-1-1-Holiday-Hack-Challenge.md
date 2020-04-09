@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Holiday-Hack-Challenge
+excerpt: Holiday-Hack-Challenge, this year was a lot of fun. Give it a try!
 ---
 
 **Part One**

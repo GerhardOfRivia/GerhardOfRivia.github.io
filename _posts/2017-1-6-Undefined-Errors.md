@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Undefined Behavior
+excerpt: Undefined Behavior I ask a question like this when I interview to see how people act with these question I think you can learn a lot of people with how they talk about these types of questions.
 ---
 
 **Define Undefined Behavior**

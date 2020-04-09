@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Go and install
+excerpt: I have been thinking about learning Go and so I copied this from a simple Go install guide.
 ---
 
 **Pick your download**

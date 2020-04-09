@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Python and Pika for RabbitMQ
+excerpt: Message queues and Python. Using Pika in python. What is Pika? Pika is a python package for RabbitMQ.
 ---
 
 **Why?**

@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Holiday-Hack-Challenge
+excerpt: Holiday-Hack-Challenge, This year was good but I thought it was harder then in the past.
 ---
 
 **Rudolph?**

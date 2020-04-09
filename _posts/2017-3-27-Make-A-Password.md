@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: bash password generator
+excerpt: When you need a password but want to autogenerate it use this simple bash password generator
 ---
 
 `$ cat ./mkpasswd`

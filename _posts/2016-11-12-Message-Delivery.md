@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Remote procedure calls
+excerpt: Remote procedure calls or RPC how they work and all the random information I found on them back ihn 2016. Back in 2016 when I started this I was in my undergrad and a class had use do a project about them.
 ---
 
 What are they?

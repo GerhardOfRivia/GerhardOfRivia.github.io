@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Intesting videos
+excerpt: Youtube university! You can learn so much off of the internet, back in 2016 I thought these videos helped me learn just a little more.
 ---
 
 **The more you know about Hello World**

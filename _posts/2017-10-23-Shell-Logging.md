@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Logging, Bash and Python
+excerpt: Logging, Bash and Python As I have worked more I see why logging is so important. Often when you work you have to update old code so logging can help debug code when tests are not available.
 ---
 
 **Bash Logging made easy**

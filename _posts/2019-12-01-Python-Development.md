@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: How I do my base Python install
+excerpt: I wrote this up as I had to rebuild my development computer and so I wanted to document how I do my base Python install
 ---
 
 **Python Install**

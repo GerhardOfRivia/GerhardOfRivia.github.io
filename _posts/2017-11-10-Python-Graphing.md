@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Python Matplotlib
+excerpt: Python Matplotlib, graphing in python can help display data and it can be done in a simple interface. With working over ssh so much I found this an extra step to learning how to use Matplotlib. Fast forward I also learned about using the io.BytesIO() and that is my bread and butter now.
 ---
 
 **Python Matplotlib on a remote system**

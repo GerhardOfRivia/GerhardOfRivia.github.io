@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Java Blocking Queue
+excerpt: Java Blocking Queues, I took these notes back in my undergrad. Maybe they will help someone. Good luck
 ---
 
 **Generic Blocking Queue Class**

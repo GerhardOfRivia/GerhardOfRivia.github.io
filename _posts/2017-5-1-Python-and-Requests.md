@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Python and Requests
+excerpt: Working with Python and Requests. Requests is maybe one of the best parts of python. Simple but also very extensive.
 ---
 
 **Environment**

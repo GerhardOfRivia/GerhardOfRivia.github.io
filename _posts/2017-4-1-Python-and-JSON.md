@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: python and dealing with json
+excerpt: In work I have moved from being a java developer to a python developer. I have had to work with json and python and dealing with json a lot so. Here is step one in learning python and json. I do enjoy working with json in python.
 ---
 
 **Environment**

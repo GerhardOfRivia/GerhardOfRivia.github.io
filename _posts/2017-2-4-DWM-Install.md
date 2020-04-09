@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: DWM plain and simple
+excerpt: DWM plain and simple, the best simple window manager. Also checkout sbar!
 ---
 
 **DWM - window manager**

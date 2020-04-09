@@ -39,6 +39,11 @@ h6,
 a {
     color: #9f9f9f
 }
+a .read-more {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
 h2 {
     border-bottom: solid 1px rgba(68, 131, 86, 0.3)
 }

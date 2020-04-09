@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: loading bars
+excerpt: I think at this point I have started working and when writing code for more people then me they sometimes expect output when the task is completing. So I realized using loading bars can help show that is it working.
 ---
 
 **Please wait while we do something**

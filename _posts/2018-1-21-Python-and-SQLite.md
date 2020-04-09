@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Python and SQLight
+excerpt: Wanted to learn a little Python and SQLight, here is a simple example
 ---
 
 **Environment**

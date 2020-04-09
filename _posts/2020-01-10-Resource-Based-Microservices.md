@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Microservices and Design
+excerpt: Microservices and Design, I have seen good design and very bad design so all a part of learning.
 ---
 
 **Microservices**

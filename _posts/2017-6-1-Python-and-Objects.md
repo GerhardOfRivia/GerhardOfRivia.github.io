@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Python and Classes
+excerpt: This was just me learning Python and how Classes work
 ---
 
 

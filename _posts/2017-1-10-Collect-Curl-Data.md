@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Curl Metrics
+excerpt: Curl Metrics, I wanted to measure response times from a group of servers but could not install a lot on the server I needed to monitor from. So I found this somewhere on the internet and thought I would keep it.
 ---
 
 **curl - transfer a URL**

@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: Searching elasticsearch
+excerpt: Searching elasticsearch, a very under rated interface that companies don't use.
 ---
 
 **Searching elasticsearch in Python**
