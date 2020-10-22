@@ -2,14 +2,16 @@
 	{% for book in site.books %}
 	<article class="book">
 
-		<h4><a href="{{ book.url }}">{{ book.title }}</a></h4>
-		<h5>{{ book.date | date: '%B %d, %Y' }} </h5>
+		<h4>{{ book.title }}</h4>
 
-		<div class="entry">
-			{{ book.excerpt | strip_html }}
+		<h3>{{ book.author }}</h3>
+
+		<p class="meta">{{ book.published }}, {{ book.ISBN }}, Pages: {{ book.pages }}</p>
+
+		<div class="amazon">
+		  <a href={{ book.url }} target="_blank" rel="sponsored noopener noreferrer" class="book"><span class="icon text-gray-400"><i class="fab fa-amazon"></i></span> <span class="font-semibold text-xs css-1n69hv8">Get on Amazon</span></a>
 		</div>
 
-		<a href="{{ book.url }}" class="read-more">Read More</a>
 	</article>
 	{% endfor %}
 </div>
