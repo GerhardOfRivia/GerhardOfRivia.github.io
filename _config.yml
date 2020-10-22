@@ -10,7 +10,14 @@ baseurl: ""
 permalink: /blog/:year/:month/:day/:title
 
 collections:
-  - books
+  books:
+    subtitle
+    author
+    amazon
+    published
+    read
+    pages
+    ISBN
 
 defaults:
   - scope:
