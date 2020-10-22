@@ -18,6 +18,7 @@ collections:
     read: "date I read it"
     pages: "number of pages"
     ISBN: "ISBN number"
+    output: true
 
 defaults:
   - scope:
