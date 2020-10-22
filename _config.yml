@@ -9,6 +9,8 @@ baseurl: ""
 
 permalink: /blog/:year/:month/:day/:title
 
+collections:
+  books
 
 defaults:
   - scope:
@@ -19,6 +21,3 @@ defaults:
       path: "posts"
     values:
       layout: "posts"
-
-collections:
-  - books
