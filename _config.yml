@@ -10,7 +10,7 @@ baseurl: ""
 permalink: /blog/:year/:month/:day/:title
 
 collections:
-  - books:
+  books:
     subtitle: "title"
     author: "author"
     amazon: "link to amazon"
