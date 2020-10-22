@@ -11,13 +11,13 @@ permalink: /blog/:year/:month/:day/:title
 
 collections:
   books:
-    subtitle
-    author
-    amazon
-    published
-    read
-    pages
-    ISBN
+    - subtitle
+    - author
+    - amazon
+    - published
+    - read
+    - pages
+    - ISBN
 
 defaults:
   - scope:
