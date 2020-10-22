@@ -19,3 +19,5 @@ defaults:
       path: "posts"
     values:
       layout: "posts"
+  - scope:
+      path: "books"
