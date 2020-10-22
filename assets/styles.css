@@ -660,12 +660,15 @@ th {
     width: 165px;
 }
 .amazon {
-  background-color: white;
-  color: black;
-  border: 2px solid #9f9f9f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    color: black;
+    border: 2px solid #9f9f9f;
 }
 
-.amazon:hover {background-color: #9f9f9f;}
+.amazon:hover {background-color: #eee;}
 
 #spacetime {
     margin-left: auto;

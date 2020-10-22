@@ -7,16 +7,27 @@
 
 			<h4>{{ book.author }}</h4>
 
-			<div>
-				Published: {{ book.published }}
-				ISBN: {{ book.ISBN }}
-				Pages: {{ book.pages }}
-			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Published</th>
+						<th>ISBN</th>
+						<th>Pages</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{ book.pages }}</td>
+						<td>{{ book.ISBN }}</td>
+						<td>{{ book.published }}</td>
+					</tr>
+                </tbody>
+			</table>
 
 		</div>
-		<div class="col-md-6 col-lg-4 hidden-xs-down">
+		<div class="col-sm-4 hidden-xs-down">
 			<div class="btn btn-sm amazon">
-			  <a href="{{ book.amazon }}" target="_blank" rel="sponsored noopener noreferrer" class="book">
+			  <a href="{{ book.amazon }}?tag=AsynchronousGillz" target="_blank" rel="sponsored noopener noreferrer" class="book">
 				  <span class="icon text-gray-400">
 					<i class="fab fa-amazon"></i>
 				  </span>
