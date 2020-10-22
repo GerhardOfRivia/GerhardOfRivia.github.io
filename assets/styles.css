@@ -659,6 +659,14 @@ th {
     overflow: hidden;
     width: 165px;
 }
+.amazon {
+  background-color: white;
+  color: black;
+  border: 2px solid #9f9f9f;
+}
+
+.amazon:hover {background-color: #9f9f9f;}
+
 #spacetime {
     margin-left: auto;
     margin-right: auto;
