@@ -1,6 +1,6 @@
 ---
 layout: default
-title: made with strange alien technology
+title: bookshelf
 ---
 
 ## Books
