@@ -21,4 +21,5 @@ defaults:
       layout: "posts"
 
 collections:
-  - books
+  books:
+    output: true
