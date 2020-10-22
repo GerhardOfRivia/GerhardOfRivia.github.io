@@ -5,13 +5,13 @@
 
 		<h4>{{ book.author }}</h4>
 
-		<p class="meta">
-		Published: {{ book.published }}</br>
-		ISBN: {{ book.ISBN }}</br>
-		Pages: {{ book.pages }}</br>
-		</p>
+		<blockquote>
+			Published: {{ book.published }}
+			ISBN: {{ book.ISBN }}
+			Pages: {{ book.pages }}
+		</blockquote>
 
-		<div class="amazon">
+		<div class="btn btn-sm amazon">
 		  <a href="{{ book.amazon }}" target="_blank" rel="sponsored noopener noreferrer" class="book">
 			  <span class="icon text-gray-400">
 			  	<i class="fab fa-amazon"></i>
