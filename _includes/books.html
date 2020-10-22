@@ -1,31 +1,29 @@
 <div>
 	{% for book in site.books %}
 	<div class="row">
-		<div class="col-xs-12 col-md-6 col-lg-8 main-content">
+		<div class=".col-xs-12 .col-sm-6 .col-lg-9 main-content">
 
 			<h3>{{ book.title }}</h3>
 
 			<h4>{{ book.author }}</h4>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Published</th>
-						<th>ISBN</th>
-						<th>Pages</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>{{ book.pages }}</td>
-						<td>{{ book.ISBN }}</td>
-						<td>{{ book.published }}</td>
-					</tr>
-                </tbody>
-			</table>
+			<p>{{ book.ISBN }}</p>
+            <div class="font-mono overflow-x-auto flex flex-no-wrap md:block whitespace-no-wrap md:whitespace-normal">
+				<span>
+					<b><i class="text-gray-700 fa fa fa-book-open pr-2"></i>Published:</b>
+					{{ book.published }}
+				</span>
+				<span>
+					<b><i class="text-gray-700 fa fa fa-calendar-check pr-2"></i>Read:</b>
+					{{ book.read }}
+				</span>
+				<span><b><i class="text-gray-700 fa fa fa-file pr-2"></i>ISBN:</b>
+					{{ book.ISBN }}
+				</span>
+			</div>
 
 		</div>
-		<div class="col-sm-4 hidden-xs-down">
+		<div class=".col-xs-6 .col-lg-3 hidden-xs-down">
 			<div class="btn btn-sm amazon">
 			  <a href="{{ book.amazon }}?tag=AsynchronousGillz" target="_blank" rel="sponsored noopener noreferrer" class="book">
 				  <span class="icon text-gray-400">
