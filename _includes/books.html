@@ -1,17 +1,21 @@
 <div>
 	{% for book in site.books %}
-	<article class="">
+	<div>
+		book
+		<h3>{{ book.title }}</h3>
 
-		<h4>{{ book.title }}</h4>
+		<h4>{{ book.author }}</h4>
 
-		<h3>{{ book.author }}</h3>
-
-		<p class="meta">{{ book.published }}, {{ book.ISBN }}, Pages: {{ book.pages }}</p>
+		<p class="meta">
+		Published: {{ book.published }}</br>
+		ISBN: {{ book.ISBN }}</br>
+		Pages: {{ book.pages }}</br>
+		</p>
 
 		<div class="amazon">
-		  <a href={{ book.url }} target="_blank" rel="sponsored noopener noreferrer" class="book"><span class="icon text-gray-400"><i class="fab fa-amazon"></i></span> <span class="font-semibold text-xs css-1n69hv8">Get on Amazon</span></a>
+		  <a href={{ book.amazon }} target="_blank" rel="sponsored noopener noreferrer" class="book"><span class="icon text-gray-400"><i class="fab fa-amazon"></i></span> <span class="font-semibold text-xs css-1n69hv8">Get on Amazon</span></a>
 		</div>
 
-	</article>
+	</div>
 	{% endfor %}
 </div>
