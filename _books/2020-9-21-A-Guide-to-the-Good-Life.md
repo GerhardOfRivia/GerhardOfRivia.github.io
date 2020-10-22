@@ -1,0 +1,10 @@
+---
+layout: books
+title: A Guide to the Good Life: The Ancient Art of Stoic Joy
+author: William B. Irvine
+amazon: https://www.amazon.com/Guide-Good-Life-Ancient-Stoic/dp/0195374614?tag=AsynchronousGillz
+published: 2008
+read: September, 2020
+pages: 336
+ISBN:9780199705566
+---

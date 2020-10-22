@@ -1,0 +1,15 @@
+<div class="books">
+	{% for book in site.books %}
+	<article class="book">
+
+		<h4><a href="{{ book.url }}">{{ book.title }}</a></h4>
+		<h5>{{ book.date | date: '%B %d, %Y' }} </h5>
+
+		<div class="entry">
+			{{ book.excerpt | strip_html }}
+		</div>
+
+		<a href="{{ book.url }}" class="read-more">Read More</a>
+	</article>
+	{% endfor %}
+</div>
