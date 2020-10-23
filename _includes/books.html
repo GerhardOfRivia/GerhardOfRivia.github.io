@@ -6,15 +6,22 @@
 
 	<div class="font-mono overflow-x-auto flex flex-no-wrap md:block whitespace-no-wrap md:whitespace-normal">
 		<span>
-			<b><i class="text-gray-700 fa fa fa-book-open pr-2"></i>Published:</b>
-			{{ book.published }}
+			<div class="btn btn-sm btn-light disabled">
+				<b><i class="text-gray-700 fa fa fa-book-open pr-2"></i>Published:</b>
+					{{ book.published }}
+			</div>
 		</span>
 		<span>
-			<b><i class="text-gray-700 fa fa fa-calendar-check pr-2"></i>Read:</b>
-			{{ book.read }}
+			<div class="btn btn-sm btn-light disabled">
+				<b><i class="text-gray-700 fa fa fa-calendar-check pr-2"></i>Read:</b>
+				{{ book.read }}
+			</div>
 		</span>
-		<span><b><i class="text-gray-700 fa fa fa-file pr-2"></i>ISBN:</b>
-			{{ book.ISBN }}
+		<span>
+			<div class="btn btn-sm btn-light disabled">
+				<b><i class="text-gray-700 fa fa fa-file pr-2"></i>ISBN:</b>
+				{{ book.ISBN }}
+			</div>
 		</span>
 		<span>
 			<div class="btn btn-sm amazon">
