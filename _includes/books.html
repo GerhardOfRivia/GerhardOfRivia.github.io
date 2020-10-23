@@ -1,6 +1,6 @@
 {% for book in site.books %}
 <div class="row">
-	<div class=".col-xs-12 .col-sm-6 .col-lg-8 main-content">
+	<div class="span8 main-content">
 
 		<h3>{{ book.title }}</h3>
 
@@ -21,7 +21,7 @@
 		</div>
 
 	</div>
-	<div class=".col-sm-6 .col-lg-4 hidden-xs-down">
+	<div class="span4 hidden-xs-down">
 		<div class="btn btn-sm amazon">
 		  <a href="{{ book.amazon }}?tag=AsynchronousGillz" target="_blank" rel="sponsored noopener noreferrer" class="book">
 			  <span class="icon text-gray-400">

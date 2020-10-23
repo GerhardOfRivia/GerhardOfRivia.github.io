@@ -660,7 +660,6 @@ th {
     width: 165px;
 }
 .amazon {
-    display:flex;
     justify-content:center;
     align-items:center;
     background-color: white;
