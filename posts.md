@@ -29,5 +29,6 @@ int main() {
 ```
 
 ## Posts
+---
 
 {% include blog.html %}
