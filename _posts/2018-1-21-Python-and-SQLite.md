@@ -1,8 +1,9 @@
 ---
 layout: posts
+excerpt: Wanted to learn a little Python and SQLight, here is a simple example
 ---
 
-## Environment
+**Environment**
 
 Before you start with using SQLite with python
 
@@ -15,23 +16,23 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from sqlite import Error
 ```
 
-## SQLite connection Functions 
+**SQLite connection Functions**
 
 | Function | Libraries |
 |---|---|
 | execute | Execute a query. |
 
-## SQLite Error Handeling
+**SQLite Error Handeling**
 
 | Execption | Why |
 |---|---|
 | Error | In case any error occurs, we catch it within the try except block and printed out the error message. If everything is fine, we print out the SQLite database version. |
 
-## Simple SQLite in Python
+**Simple SQLite in Python**
 
-Python 
+*Python*
 
-### Syntax
+**Syntax**
 
 ```python3
 #!/usr/bin/python
@@ -103,7 +104,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### SQL 
+**SQL**
 
 ```
 --
@@ -168,10 +169,10 @@ select all tasks
 SELECT * FROM tasks
 ```
 
-### Need a place to start, downlaod this sample database
+**Need a place to start, downlaod this sample database**
 
 > http://www.sqlitetutorial.net/download/sqlite-sample-database/?wpdmdl=94
 
-### Sample Diagram
+**Sample Diagram**
 
 > http://www.sqlitetutorial.net/download/sqlite-sample-database-diagram/?wpdmdl=96

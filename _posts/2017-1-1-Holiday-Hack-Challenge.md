@@ -1,10 +1,11 @@
 ---
 layout: posts
+excerpt: Holiday-Hack-Challenge, this year was a lot of fun. Give it a try!
 ---
 
-## Part One
+**Part One**
 
-### Santa's Twitter
+**Santa's Twitter**
 
 @santawclaus - twitter
 
@@ -73,7 +74,7 @@ if __name__ == '__main__':
     get_all_tweets("SantaWClaus")
 ```
 
-### Santa's Instagram
+**Santa's Instagram**
 
 Deep in the picture www.northpolewonderland.com
 
@@ -95,7 +96,7 @@ We then asked Tom in the Tree house. "XXX.XXX.XXX.XXX"
 
 Use the code word from the twitter messages.
 
-## Part Two
+**Part Two**
 
 `unzip SantaGram_v4.2.apk`
 
@@ -181,9 +182,9 @@ smali/com/northpolewonderland/santagram/SplashScreen.smali-264-    const-string 
 ./res/raw/discombobulatedaudio1.mp3
 ```
 
-## Part Three
+**Part Three**
 
-### Itchy and Scratchy
+**Itchy and Scratchy**
 
 `sudo -h`
 
@@ -197,7 +198,7 @@ Note: n for length for minium of characters
 
 Note: l = 16-bit littleendian
 
-### Wumpus
+**Wumpus**
 
 [comment]: <> I would want to know how to cheat.
 
@@ -228,7 +229,7 @@ Passphrase:
 WUMPUS IS MISUNDERSTOOD
 ```
 
-### Doormat
+**Doormat**
 
 ```
 *******************************************************************************
@@ -243,7 +244,7 @@ elf@d3dc3a845642:~$ find . -name "*.txt" -exec cat {} \;
 key: open_sesame
 ```
 
-### War Games
+**War Games**
 
 
 [comment]: <> " > " From the termianl.
@@ -309,7 +310,7 @@ key: open_sesame
 
 ```
 
-### The Train Game
+**The Train Game**
 
 ```
 
@@ -382,7 +383,7 @@ Press Enter to initiate time travel sequence.
 
 [comment]: <> I found SANTA behind the Wumpus Door in 1978!
 
-## Part Four
+**Part Four**
 
 [comment]: <> Inside the APK file.
 
@@ -576,7 +577,7 @@ PORT      STATE    SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 2.33 seconds
 ```
 
-## Epilogue
+**Epilogue**
 
 I had fun and want to thank the Sans Team for the hours of enjoyment. I didn't finish but next year maybe I will have more time.
 

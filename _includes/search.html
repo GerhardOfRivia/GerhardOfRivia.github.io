@@ -1,11 +1,67 @@
 <h3 id="spacetime"></h3>
-<form name="searchForm" class="searchForm" method="GET"  action="javascript:searchForm()">
-	<p>
-		<i id="list-search" class="fa fa-question-circle"></i>
-		<input class="searchInput" type="text" name="q" placeholder="Welcome" autofocus>
-	</p>
-</form>
-<ul id="searchEngineList" class="hide"></ul>
 
-<script type="text/javascript" src="assets/site.js" async></script>
+<h3 class="Notes">
+	Latest Notes
+</h3>
+<div>
+	{% for post in site.posts limit:2 %}
+	<article class="box">
 
+		<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+		<h5>{{ post.date | date: '%B %d, %Y' }} </h5>
+
+		<div class="entry">
+			{{ post.excerpt | strip_html }}
+		</div>
+
+		<a href="{{ post.url }}" class="read-more">Read More</a>
+	</article>
+	{% endfor %}
+</div>
+
+<h3 class="books">
+	Latest Books
+</h3>
+{% assign sorted = site.books | reverse  %}
+<div>
+	{% for book in sorted limit:2 %}
+	<div class="box">
+		<h3>{{ book.title }}</h3>
+
+		<h4>{{ book.author }}</h4>
+
+		<div class="font-mono overflow-x-auto flex flex-no-wrap md:block whitespace-no-wrap md:whitespace-normal">
+			<span>
+				<div class="btn btn-sm disabled">
+					<b><i class="text-gray-700 fa fa fa-book-open pr-2"></i>Published:</b>
+						{{ book.published }}
+				</div>
+			</span>
+			<span>
+				<div class="btn btn-sm disabled">
+					<b><i class="text-gray-700 fa fa fa-calendar-check pr-2"></i>Read:</b>
+					{{ book.read }}
+				</div>
+			</span>
+			<span>
+				<div class="btn btn-sm disabled">
+					<b><i class="text-gray-700 fa fa fa-file pr-2"></i>ISBN:</b>
+					{{ book.ISBN }}
+				</div>
+			</span>
+			<span>
+				<div class="btn btn-sm">
+				  <a href="{{ book.amazon }}?tag=AsynchronousGillz" target="_blank" rel="sponsored noopener noreferrer" class="book">
+					  <span class="icon text-gray-400">
+						<i class="fab fa-amazon"></i>
+					  </span>
+					  <span class="font-semibold text-xs css-1n69hv8">
+						  Get on Amazon
+					  </span>
+				  </a>
+				</div>
+			</span>
+		</div>
+	</div>
+	{% endfor %}
+</div>

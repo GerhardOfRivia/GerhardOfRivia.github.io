@@ -1,12 +1,13 @@
 ---
 layout: posts
+excerpt: Holiday-Hack-Challenge, This year was good but I thought it was harder then in the past.
 ---
 
-### Rudolph?
+**Rudolph?**
 
 > 1) Visit the North Pole and Beyond at the Winter Wonder Landing Level to collect the first page of The Great Book using a giant snowball. What is the title of that page? 
 
-## Page 1
+**Page 1**
 
 > https://www.holidayhackchallenge.com/2017/pages/6dda7650725302f59ea42047206bd4ee5f928d19/GreatBookPage1.pdf
 

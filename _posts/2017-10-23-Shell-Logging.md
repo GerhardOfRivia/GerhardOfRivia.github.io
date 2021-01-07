@@ -1,8 +1,9 @@
 ---
 layout: posts
+excerpt: Logging, Bash and Python As I have worked more I see why logging is so important. Often when you work you have to update old code so logging can help debug code when tests are not available.
 ---
 
-## Bash Logging made easy
+**Bash Logging made easy**
 
 Ideally we would like the following:
 
@@ -10,7 +11,7 @@ Ideally we would like the following:
 - stdout and stderr kept separate
 - stdout and stderr message order preserved
 
-### 1. Logging with functions
+**1. Logging with functions**
 
 ```
 #!/bin/bash
@@ -31,7 +32,7 @@ log "writing to stdout"
 err "writing to stderr"
 ```
 
-### Design an Expected format:
+**Design an Expected format**
 
 ```
 TimeStamp    LogLevel   Message
@@ -76,7 +77,7 @@ function ERROR(){
 }
 ```
 
-### Ideally we want to keep things simple.
+**Ideally we want to keep things simple**
 
 What ended the search for simple logging in bash.
 

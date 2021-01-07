@@ -1,8 +1,9 @@
 ---
 layout: posts
+excerpt: I have been thinking about learning Go and so I copied this from a simple Go install guide.
 ---
 
-## Pick your download
+**Pick your download**
 
 Now download the Go language binary archive file. [DOWNLOAD](https://golang.org/dl/)
 
@@ -14,7 +15,7 @@ export GOPATH=$HOME/workspace/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 ```
 
-### Validate the install
+**Validate the install**
 
 ```
 go version
@@ -22,7 +23,7 @@ go version
 go env
 ```
 
-### Project design
+**Project design**
 
 ```
 To give you an idea of how a workspace looks in practice, here's an example:

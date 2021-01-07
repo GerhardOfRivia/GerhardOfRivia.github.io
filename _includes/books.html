@@ -1,0 +1,40 @@
+{% for book in site.books reversed %}
+<div class="box">
+	<h3>{{ book.title }}</h3>
+
+	<h4>{{ book.author }}</h4>
+
+	<div class="font-mono overflow-x-auto flex flex-no-wrap md:block whitespace-no-wrap md:whitespace-normal">
+		<span>
+			<div class="btn btn-sm disabled">
+				<b><i class="text-gray-700 fa fa fa-book-open pr-2"></i>Published:</b>
+					{{ book.published }}
+			</div>
+		</span>
+		<span>
+			<div class="btn btn-sm disabled">
+				<b><i class="text-gray-700 fa fa fa-calendar-check pr-2"></i>Read:</b>
+				{{ book.read }}
+			</div>
+		</span>
+		<span>
+			<div class="btn btn-sm disabled">
+				<b><i class="text-gray-700 fa fa fa-file pr-2"></i>ISBN:</b>
+				{{ book.ISBN }}
+			</div>
+		</span>
+		<span>
+			<div class="btn btn-sm">
+			  <a href="{{ book.amazon }}?tag=AsynchronousGillz" target="_blank" rel="sponsored noopener noreferrer" class="book">
+				  <span class="icon text-gray-400">
+					<i class="fab fa-amazon"></i>
+				  </span>
+				  <span class="font-semibold text-xs css-1n69hv8">
+					  Get on Amazon
+				  </span>
+			  </a>
+			</div>
+		</span>
+	</div>
+</div>
+{% endfor %}

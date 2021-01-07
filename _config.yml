@@ -9,6 +9,16 @@ baseurl: ""
 
 permalink: /blog/:year/:month/:day/:title
 
+collections:
+  books:
+    subtitle: "title"
+    author: "author"
+    amazon: "link to amazon"
+    published: "published year"
+    read: "date I read it"
+    pages: "number of pages"
+    ISBN: "ISBN number"
+    output: true
 
 defaults:
   - scope:

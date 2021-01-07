@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: Learn Regex, it will help you. Warning though when all you have is a Hammer, everything looks like a Nail — When learning regex know that it has a time and a place.
 ---
 
 [RegExr](http://regexr.com/)

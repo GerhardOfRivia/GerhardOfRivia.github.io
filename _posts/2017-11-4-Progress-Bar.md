@@ -1,10 +1,11 @@
 ---
 layout: posts
+excerpt: I think at this point I have started working and when writing code for more people then me they sometimes expect output when the task is completing. So I realized using loading bars can help show that is it working.
 ---
 
-### Please wait while we do something.
+**Please wait while we do something**
 
-#### Bash
+*Bash*
 
 ```bash
 #!/bin/bash
@@ -45,7 +46,7 @@ function print_progress_bar() {
 exit
 ```
 
-Example:
+**Example**:
 
 ```bash
 # Here is a sample that waits for 5 minutes
@@ -59,7 +60,7 @@ echo ""
 
 ```
 
-#### Python
+*Python*
 
 ```python
 #!/usr/bin/env python3
@@ -80,7 +81,7 @@ def progressbar(it, prefix="", size=60):
     sys.stdout.flush()
 ```
 
-Example:
+**Example**:
 
 ```python
 #!/usr/bin/env python3

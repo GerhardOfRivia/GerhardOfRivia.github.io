@@ -1,8 +1,9 @@
 ---
 layout: posts
+excerpt: In work I have moved from being a java developer to a python developer. I have had to work with json and python and dealing with json a lot so. Here is step one in learning python and json. I do enjoy working with json in python.
 ---
 
-## Environment
+**Environment**
 
 Before you start with encoding and decoding JSON using Python, you need to install any of the JSON modules available. Built in to a mass majority of python releases. 
 
@@ -15,23 +16,23 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-## JSON Functions 
+**JSON Functions**
 
 | Function | Libraries |
 |---|---|
 | loads | Encodes the Python object from a JSON string representation. |
 | dumps | Decodes a python object into a string object. |
 
-## Loading JSON in Python (loads)
+**Loading JSON in Python (loads)**
 
 Python loads() function encodes the Python object into a JSON string representation.
 
-### Syntax
+**Syntax**
 
 json.loads()
 
 
-### Example
+**Example**
 
 ```python
 >>> Import json
@@ -42,14 +43,14 @@ json.loads()
 {'cat': 'kitty'}
 ```
 
-## Dumping JSON in Python (dumps)
+**Dumping JSON in Python (dumps)**
 Python can use json.dumps() function for outputing JSON. This function returns the string in json.
 
-### Syntax
+**Syntax**
 
 json.dumps()
 
-### Example
+**Example**
 
 The following example shows arrays under JSON with Python.
 
