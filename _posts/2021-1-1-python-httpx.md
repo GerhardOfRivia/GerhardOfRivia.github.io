@@ -1,5 +1,6 @@
 ---
 layout: posts
+excerpt: A simple next-generation HTTP client for Python httpx.
 ---
 
 ## Environment
