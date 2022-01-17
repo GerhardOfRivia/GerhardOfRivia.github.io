@@ -79,4 +79,4 @@ puts g['k'] #=> nil
 puts g[:k] #=> 42
 ```
 
-So if you use this know that it changes the hash and if you use the hash after that just know you will have to use symbols. To access the values and not the string values.
+So if you use this know that it changes the hash and if you use the hash after that just know you will have to use symbols. To access the values and not the string values. 
