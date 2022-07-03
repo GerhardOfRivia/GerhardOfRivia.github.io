@@ -7,14 +7,12 @@
 	{% for post in site.posts limit:2 %}
 	<article class="box">
 
-		<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-		<h5>{{ post.date | date: '%B %d, %Y' }} </h5>
+		<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<h4>{{ post.date | date: '%B %d, %Y' }} </h4>
 
-		<div class="entry">
+		<div class="font-mono overflow-x-auto flex flex-no-wrap md:block whitespace-no-wrap md:whitespace-normal">
 			{{ post.excerpt | strip_html }}
 		</div>
-
-		<a href="{{ post.url }}" class="read-more">Read More</a>
 	</article>
 	{% endfor %}
 </div>
