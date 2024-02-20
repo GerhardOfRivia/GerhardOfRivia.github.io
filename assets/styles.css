@@ -78,6 +78,8 @@ header,
 footer {
     -webkit-box-flex: 0;
     -ms-flex: none;
+    position: absolute;
+    bottom: 0;
     flex: none;
     background: var(--heading-color)
 }
@@ -322,8 +324,7 @@ footer a {
 }
 #footer-bottom {
     background: var(--heading-color);
-    color: var(--primary-color);
-    padding: 25px 0
+    color: var(--primary-color)
 }
 #footer-bottom .sheet {
     -webkit-box-pack: justify;
@@ -739,63 +740,4 @@ input[type=file] {
 
 .books {
     scroll-margin-top: 1em;
-<<<<<<< Updated upstream
 }
-=======
-}
-
-/*Simple css to style it like a toggle switch*/
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-
-.theme-switch input {
-  display:none;
-}
-
-.slider {
-  background-color: #ccc;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-}
-
-.slider:before {
-  background-color: #fff;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
-}
-
-input:checked + .slider {
-  background-color: #66bb6a;
-}
-
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
->>>>>>> Stashed changes
