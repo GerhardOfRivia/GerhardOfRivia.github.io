@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: A simple overview of FastApi
+excerpt: MRUpdater notes 
 ---
 
 # Modretro Updater
