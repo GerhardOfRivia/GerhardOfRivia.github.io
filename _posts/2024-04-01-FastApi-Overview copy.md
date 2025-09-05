@@ -1,6 +1,6 @@
 ---
 layout: posts
-excerpt: modretro updater
+excerpt: FastApi Notes
 ---
 
 # FastApi: Overview
