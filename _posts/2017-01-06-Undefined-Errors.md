@@ -3,11 +3,13 @@ layout: posts
 excerpt: Undefined Behavior I ask a question like this when I interview to see how people act with these question I think you can learn a lot of people with how they talk about these types of questions.
 ---
 
-**Define Undefined Behavior**
+# Undefined Behavior
+
+### Define Undefined Behavior
 
 Code, we think to know what it will do.
 
-```
+```c
 #include <limits.h>
 #include <stdio.h>
 
@@ -18,7 +20,7 @@ void main () {
 
 What will this print?
 
-```
+```c
 #include <limits.h>
 #include <stdio.h>
 
@@ -30,11 +32,11 @@ void main () {
 
 What about this? What will this print?
 
-**Why Is Undefined Behavior Good?**
+## Why Is Undefined Behavior Good?
 
 Undefined behavior simplifies the compiler’s job, making it possible to generate very efficient code in certain situations.
 
-```
+```c
 #include <limits.h>
 #include <stdio.h>
 
@@ -48,11 +50,11 @@ void main () {
 }
 ```
 
-**Why Is Undefined Behavior Bad?**
+## Why Is Undefined Behavior Bad?
 
 When programmers cannot be trusted to reliably avoid undefined behavior, we end up with programs that silently misbehave.
 
-```
+```c
 #include <limits.h>
 #include <stdio.h>
 

@@ -3,9 +3,11 @@ layout: posts
 excerpt: Holiday-Hack-Challenge, this year was a lot of fun. Give it a try!
 ---
 
-**Part One**
+# Holiday-Hack-Challenge
 
-**Santa's Twitter**
+## Part One
+
+### Santa's Twitter
 
 @santawclaus - twitter
 
@@ -74,13 +76,13 @@ if __name__ == '__main__':
     get_all_tweets("SantaWClaus")
 ```
 
-**Santa's Instagram**
+### Santa's Instagram
 
 Deep in the picture www.northpolewonderland.com
 
 `dig northpolewonderland.com`
 
-```
+```txt
 ;; ANSWER SECTION:
 www.northpolewonderland.com. 3600 IN CNAME northpolewonderland.com.
 northpolewonderland.com.     887  IN A XXX.XXX.XXX.XXX
@@ -96,11 +98,11 @@ We then asked Tom in the Tree house. "XXX.XXX.XXX.XXX"
 
 Use the code word from the twitter messages.
 
-**Part Two**
+## Part Two
 
 `unzip SantaGram_v4.2.apk`
 
-```
+```txt
 1 Audio file with ID3 version 2.3.0
 1 JPEG image data
 1 Targa image data - RLE 360 x 65536 x 17 +1 +28 ""
@@ -112,7 +114,7 @@ Use the code word from the twitter messages.
 
 `apktool d SantaGram_v4.2.apk`
 
-```
+```txt
 I: Using Apktool 2.2.0-dirty on SantaGram_4.2.apk
 I: Loading resource table...
 I: Decoding AndroidManifest.xml with resources...
@@ -128,7 +130,7 @@ I: Copying original files...
 
 `find . -type f -exec file -b {} \; | cut -d, -f1 | sort | uniq -c | sort -n`
 
-```
+```txt
 1 Audio file with ID3 version 2.3.0
 1 JPEG image data
 261 PNG image data
@@ -139,7 +141,7 @@ I: Copying original files...
 
 `grep -A 2 -B 2 -n -r password`
 
-```
+```txt
 --
 com/northpolewonderland/santagram/b.smali-415-    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 com/northpolewonderland/santagram/b.smali-416-
@@ -157,7 +159,7 @@ com/northpolewonderland/santagram/SplashScreen.smali-270-    const-string v2, "b
 
 `grep -A 2 -B 2 -n -r username`
 
-```
+```txt
 --
 smali/com/northpolewonderland/santagram/b.smali-409-
 smali/com/northpolewonderland/santagram/b.smali-410-    :try_start_0
@@ -178,13 +180,13 @@ smali/com/northpolewonderland/santagram/SplashScreen.smali-264-    const-string 
 
 `find . -i -name "*.mp3`
 
-```
+```txt
 ./res/raw/discombobulatedaudio1.mp3
 ```
 
-**Part Three**
+## Part Three
 
-**Itchy and Scratchy**
+### Itchy and Scratchy
 
 `sudo -h`
 
@@ -198,21 +200,20 @@ Note: n for length for minium of characters
 
 Note: l = 16-bit littleendian
 
-**Wumpus**
+### Wumpus
 
 [comment]: <> I would want to know how to cheat.
 
-```
+```txt
 *******************************************************************************
 *                                                                             *
 * Find the passphrase from the wumpus.  Play fair or cheat; it's up to you.   * 
 *                                                                             *
 *******************************************************************************
 elf@95def3e77585:~$ ./wumpus
-
 ```
 
-```
+```txt
 You are in room 17 of the cave, and have 1 arrow left.
 *sniff* (I can smell the evil Wumpus nearby!)
 There are tunnels to rooms 4, 10, and 15.
@@ -229,9 +230,9 @@ Passphrase:
 WUMPUS IS MISUNDERSTOOD
 ```
 
-**Doormat**
+### Doormat
 
-```
+```txt
 *******************************************************************************
 *                                                                             *
 * To open the door, find the passphrase file deep in the directories.         * 
@@ -244,14 +245,13 @@ elf@d3dc3a845642:~$ find . -name "*.txt" -exec cat {} \;
 key: open_sesame
 ```
 
-**War Games**
-
+### War Games
 
 [comment]: <> " > " From the termianl.
 
 [comment]: <> " < " Input from me.
 
-```
+```txt
 > GREETINGS PROFESSOR FALKEN.
 
 < Hello.
@@ -310,9 +310,9 @@ key: open_sesame
 
 ```
 
-**The Train Game**
+### The Train Game
 
-```
+```txt
 
                 ==== MAIN MENU ====
 STATUS:                         Train Status
@@ -325,7 +325,7 @@ QUIT:                           Exit console
 
 `HELP`
 
-```
+```txt
 Help Document for the Train
 **STATUS** option will show you the current state of the train (brakes, boiler, boiler
  temp, coal level)
@@ -346,7 +346,7 @@ You are now running less.
 
 `! ./ActivateTrain`
 
-```
+```txt
 Help Document for the Train
    MONTH   DAY     YEAR          HOUR   MIN
   +-----+ +----+ +------+  O AM +----+ +----+      DISCONNECT CAPACITOR DRIVE
@@ -373,7 +373,7 @@ Help Document for the Train
 Press Enter to initiate time travel sequence.
 ```
 
-```
+```txt
 --->Activating TIME TRAVEL sequence NOW.....
 
 
@@ -383,13 +383,13 @@ Press Enter to initiate time travel sequence.
 
 [comment]: <> I found SANTA behind the Wumpus Door in 1978!
 
-**Part Four**
+## Part Four
 
 [comment]: <> Inside the APK file.
 
 `grep -n http strings.xml`
 
-```
+```txt
 strings.xml:24:    <string name="analytics_launch_url">https://analytics.northpolewonderland.com/report.php?type=launch</string>
 strings.xml:25:    <string name="analytics_usage_url">https://analytics.northpolewonderland.com/report.php?type=usage</string>
 strings.xml:29:    <string name="banner_ad_url">http://ads.northpolewonderland.com/affiliate/C9E380C8-2244-41E3-93A3-D6C6700156A5</string>
@@ -397,12 +397,12 @@ strings.xml:32:    <string name="debug_data_collection_url">http://dev.northpole
 strings.xml:34:    <string name="dungeon_url">http://dungeon.northpolewonderland.com/</string>
 strings.xml:35:    <string name="exhandler_url">http://ex.northpolewonderland.com/exception.php</string>
 ```
----
 
+---
 
 `dig analytics.northpolewonderland.com`
 
-```
+```txt
 ;; ANSWER SECTION:
 analytics.northpolewonderland.com. 1426IN API XXX.XXX.XXX.XXX
 
@@ -414,7 +414,7 @@ analytics.northpolewonderland.com. 1426IN API XXX.XXX.XXX.XXX
 
 `nmap -sC analytics.northpolewonderland.com`
 
-```
+```txt
 Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 16:57 MST
 Nmap scan report for analytics.northpolewonderland.com (104.198.252.157)
 Host is up (0.013s latency).
@@ -471,7 +471,6 @@ Nmap done: 1 IP address (1 host up) scanned in 5.82 seconds
 
 ---
 
-
 `dig ads.northpolewonderland.com`
 
 [comment]: <> Inside the game.... At Tom Hessman
@@ -480,7 +479,7 @@ Nmap done: 1 IP address (1 host up) scanned in 5.82 seconds
 
 `nmap -sC ads.northpolewonderland.com`
 
-```
+```txt
 Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 17:10 MST
 Nmap scan report for ads.northpolewonderland.com (104.198.221.240)
 Host is up (0.013s latency).
@@ -513,7 +512,7 @@ Nmap done: 1 IP address (1 host up) scanned in 4.90 seconds
 
 `nmap -sC dev.northpolewonderland.com`
 
-```
+```txt
 Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 16:55 MST
 Nmap scan report for dev.northpolewonderland.com (35.184.63.245)
 Host is up (0.013s latency).
@@ -533,7 +532,6 @@ Nmap done: 1 IP address (1 host up) scanned in 5.28 seconds
 
 `curl -H "Content-Type: application/json" -X POST -d '{"username":"guest","password":"busyreindeer78"}' http://dev.northpolewonderland.com`
 
-
 ---
 
 `dig dungeon.northpolewonderland.com`
@@ -544,7 +542,7 @@ Nmap done: 1 IP address (1 host up) scanned in 5.28 seconds
 
 `nmap -sC dungeon.northpolewonderland.com`
 
-```
+```txt
 Starting Nmap 7.40 ( https://nmap.org ) at 2017-01-04 17:11 MST
 Nmap scan report for dungeon.northpolewonderland.com (35.184.47.139)
 Host is up (0.013s latency).
@@ -577,8 +575,6 @@ PORT      STATE    SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 2.33 seconds
 ```
 
-**Epilogue**
+## Epilogue
 
 I had fun and want to thank the Sans Team for the hours of enjoyment. I didn't finish but next year maybe I will have more time.
-
-

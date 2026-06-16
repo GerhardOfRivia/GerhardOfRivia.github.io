@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<h4>{{ page.title }}</h4>
-
-<p class="meta">{{ page.date | date: '%B %d, %Y' }}</p>
+<div>
+  <a class="posts" href="/posts">posts</a>
+  <p class="meta"> / {{ page.title }} / {{ page.date | date: '%B %d, %Y' }}</p>
+</div>
 
 <div class="post">
   {{ content }}

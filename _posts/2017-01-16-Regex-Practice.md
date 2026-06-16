@@ -3,9 +3,11 @@ layout: posts
 excerpt: Learn Regex, it will help you. Warning though when all you have is a Hammer, everything looks like a Nail — When learning regex know that it has a time and a place.
 ---
 
+# Learn Regex
+
 [RegExr](http://regexr.com/)
 
-```
+```txt
 Welcome to RegExr v2.1 by gskinner.com, proudly hosted by Media Temple!
 
 Edit the Expression & Text to see matches. Roll over matches or the expression for details. Undo mistakes with ctrl-z. Save Favorites & Share expressions with friends or the Community. Explore your results with Tools. A full Reference & Help is available in the Library, or watch the video Tutorial.
