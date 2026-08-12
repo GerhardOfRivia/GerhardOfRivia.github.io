@@ -5,4 +5,4 @@ title: Home
 
 {% include chat.html %}
 
-{% include search.html %}
+{% include latest.html %}
