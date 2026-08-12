@@ -1,0 +1,21 @@
+<section class="chat-panel" aria-labelledby="chat-title">
+  <div class="chat-panel__header">
+    <span class="chat-panel__eye" aria-hidden="true"></span>
+    <div>
+      <h1 id="chat-title">HAL 9000</h1>
+      <p><span class="chat-panel__status" aria-hidden="true"></span>Online</p>
+    </div>
+  </div>
+
+  <div class="chat-panel__messages" id="chat-messages" aria-live="polite">
+    <p class="chat-panel__hint">Ask me anything.</p>
+  </div>
+
+  <form class="chat-panel__form" id="chat-form">
+    <label class="sr-only" for="chat-input">Message HAL 9000</label>
+    <input id="chat-input" name="message" type="text" placeholder="Message HAL 9000..." autocomplete="off" required>
+    <button type="submit" aria-label="Send message">
+      <span aria-hidden="true">&#8593;</span>
+    </button>
+  </form>
+</section>

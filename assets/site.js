@@ -1,7 +1,12 @@
 /*
  * TIME AND DATE
  */
-function getTime(){
+function getTime() {
+    var spacetime = document.getElementById("spacetime");
+    if (!spacetime) {
+        return;
+    }
+
     var currentTime = new Date();
     var hour    = currentTime.getHours();
     var min     = currentTime.getMinutes();
@@ -25,7 +30,44 @@ function getTime(){
     var yer     = currentTime.getFullYear();
     var date    = dayNames[nam] + " " + monthNames[mon] + " " + day + " " + yer;
 
-    document.getElementById("spacetime").innerHTML = time + " " + date;
+    spacetime.textContent = time + " " + date;
+}
+
+function addChatMessage(container, text, role) {
+    var message = document.createElement("p");
+    message.className = "chat-message chat-message--" + role;
+    message.textContent = text;
+    container.appendChild(message);
+}
+
+function setupChat() {
+    var form = document.getElementById("chat-form");
+    var input = document.getElementById("chat-input");
+    var messages = document.getElementById("chat-messages");
+
+    if (!form || !input || !messages) {
+        return;
+    }
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var prompt = input.value.trim();
+        if (!prompt) {
+            return;
+        }
+
+        var hint = messages.querySelector(".chat-panel__hint");
+        if (hint) {
+            hint.remove();
+        }
+
+        addChatMessage(messages, prompt, "user");
+        addChatMessage(messages, "I'm sorry, Dave. I'm afraid I can't do that.", "assistant");
+        input.value = "";
+        input.focus();
+        messages.scrollTop = messages.scrollHeight;
+    });
 }
 
 
@@ -41,6 +83,8 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches || currentTheme) {
     switchThemeToDark();
 }
 
-// get time once so as to avoid 1s delay
-getTime();
-setInterval(getTime, 1000);
+document.addEventListener("DOMContentLoaded", function () {
+    getTime();
+    setupChat();
+    setInterval(getTime, 1000);
+});
